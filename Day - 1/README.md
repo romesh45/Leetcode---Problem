@@ -82,44 +82,6 @@ Result:   4 → 5 → 1 → 2 → 3 → None  ✓
 
 ---
 
-## Solution
-
-```python
-class Solution:
-    def rotateRight(self, head: Optional[ListNode], k: int) -> Optional[ListNode]:
-        # Edge case: empty list, single node, or no rotation
-        if not head or not head.next or k == 0:
-            return head
-
-        # Step 1: Find length and tail
-        length = 1
-        tail = head
-        while tail.next:
-            tail = tail.next
-            length += 1
-
-        # Step 2: Effective rotation (handles k > length)
-        k = k % length
-        if k == 0:
-            return head
-
-        # Step 3: Make circular
-        tail.next = head
-
-        # Step 4: Find new tail → (length - k - 1) steps from head
-        new_tail = head
-        for _ in range(length - k - 1):
-            new_tail = new_tail.next
-
-        # Step 5: Break the circle
-        new_head = new_tail.next
-        new_tail.next = None
-
-        return new_head
-```
-
----
-
 ## Complexity Analysis
 
 | | Complexity | Reason |
