@@ -1,0 +1,24 @@
+from typing import List
+
+class Solution:
+    def rotateTheBox(self, box: List[List[str]]) -> List[List[str]]:
+        m, n = len(box), len(box[0])
+
+        # ── Step 1: Apply gravity (stones fall right) per row ──
+        for row in box:
+            empty = n - 1                    # next free slot (rightmost)
+            for j in range(n - 1, -1, -1):
+                if row[j] == '*':
+                    empty = j - 1            # obstacle resets boundary
+                elif row[j] == '#':
+                    row[j] = '.'             # vacate current position
+                    row[empty] = '#'         # stone falls to free slot
+                    empty -= 1               # move pointer left
+
+        # ── Step 2: Rotate 90° clockwise ──
+        result = [['.' for _ in range(m)] for _ in range(n)]
+        for i in range(m):
+            for j in range(n):
+                result[j][m - 1 - i] = box[i][j]
+
+        return result
