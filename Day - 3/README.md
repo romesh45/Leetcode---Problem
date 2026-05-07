@@ -96,15 +96,15 @@ Merge components using Union-Find with:
 from typing import List
 
 class Solution:
-    def maximumJumps(self, nums: List[int]) -> List[int]:
+    def maxValue(self, nums: List[int]) -> List[int]:
         n = len(nums)
         parent = list(range(n))
         size   = [1] * n
-        mx     = nums[:]          # max value in each component (tracked at root)
+        mx     = nums[:]
 
         def find(x):
             while parent[x] != x:
-                parent[x] = parent[parent[x]]  # path compression (halving)
+                parent[x] = parent[parent[x]]
                 x = parent[x]
             return x
 
@@ -113,30 +113,29 @@ class Solution:
             if rx == ry:
                 return
             if size[rx] < size[ry]:
-                rx, ry = ry, rx              # union by size
+                rx, ry = ry, rx
             parent[ry] = rx
-            size[rx] += size[ry]
-            mx[rx] = max(mx[rx], mx[ry])    # propagate max to new root
+            size[rx]  += size[ry]
+            mx[rx]     = max(mx[rx], mx[ry])
 
-        # Pass 1: union each index with its Previous Greater Element (PGE)
-        # Stack stays decreasing; pop while top <= current value
+        # Each entry = [component_root, MAX value in that entire component]
+        # Key fix: we track component MAX, not just the element's own value
+        # Stack stays non-decreasing in comp_max (bottom to top)
         stack = []
+
         for i in range(n):
-            while stack and nums[stack[-1]] <= nums[i]:
-                stack.pop()
-            if stack:
-                union(i, stack[-1])
-            stack.append(i)
+            comp_max = nums[i]
 
-        # Pass 2: union each index with its Next Smaller Element (NSE)
-        # Stack stays increasing; pop while top >= current value
-        stack = []
-        for i in range(n - 1, -1, -1):
-            while stack and nums[stack[-1]] >= nums[i]:
-                stack.pop()
-            if stack:
-                union(i, stack[-1])
-            stack.append(i)
+            # Pop any component whose MAX > nums[i]
+            # Reason: that component contains SOME element to the LEFT of i
+            # with a LARGER value → direct connection → same component
+            while stack and stack[-1][1] > nums[i]:
+                rep, m = stack.pop()
+                union(i, rep)
+                comp_max = max(comp_max, m)   # absorb the popped component's max
+
+            # Push merged component with its true maximum
+            stack.append([find(i), comp_max])
 
         return [mx[find(i)] for i in range(n)]
 ```
