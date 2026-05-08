@@ -19,20 +19,18 @@ This repository tracks my **daily LeetCode problem-solving streak**. Every day I
 
 Each day's folder contains:
 - `solution.py` — clean, commented Python 3 solution
-- `README.md` — problem statement, intuition, algorithm walkthrough, dry run, and complexity analysis
+- `README.md` — problem statement, intuition, dry run, and complexity analysis
 
 ---
 
 ## 🗂️ Problem Index
 
-| Day | Problem | Difficulty | Topics | Solution |
-|:---:|---------|:----------:|--------|:--------:|
-| [Day 1](./Day%20-%201) | <!-- Fill in: Problem Name + LC link --> | <!-- Easy / Medium / Hard --> | <!-- e.g. Array, Greedy --> | [→](./Day%20-%201/solution.py) |
-| [Day 2](./Day%20-%202) | <!-- Fill in: Problem Name + LC link --> | <!-- Easy / Medium / Hard --> | <!-- e.g. DP, Stack --> | [→](./Day%20-%202/solution.py) |
-| [Day 3](./Day%20-%203) | [3660. Jump Game IX](https://leetcode.com/problems/jump-game-ix/) | ![Medium](https://img.shields.io/badge/-Medium-f59e0b) | Monotonic Stack · Union-Find · Graph | [→](./Day%20-%203/solution.py) |
-| [Day 4](./Day%20-%204) | [3629. Minimum Jumps via Prime Teleportation](https://leetcode.com/problems/minimum-jumps-to-reach-end-via-prime-teleportation/) | ![Medium](https://img.shields.io/badge/-Medium-f59e0b) | BFS · SPF Sieve · Number Theory | [→](./Day%20-%204/solution.py) |
-
-> **How to update:** When you add a new day, paste a new row at the bottom. Replace `Day X` with the folder name, link to the LeetCode problem, pick difficulty, and add the topic tags.
+| Day | Problem | Difficulty | Topics |
+|:---:|---------|:----------:|--------|
+| [Day 1](./Day%20-%201) | [61. Rotate List](https://leetcode.com/problems/rotate-list/) | ![Medium](https://img.shields.io/badge/-Medium-f59e0b) | Linked List · Two Pointers |
+| [Day 2](./Day%20-%202) | [1861. Rotating the Box](https://leetcode.com/problems/rotating-the-box/) | ![Medium](https://img.shields.io/badge/-Medium-f59e0b) | Array · Two Pointers · Matrix |
+| [Day 3](./Day%20-%203) | [3660. Jump Game IX](https://leetcode.com/problems/jump-game-ix/) | ![Medium](https://img.shields.io/badge/-Medium-f59e0b) | Monotonic Stack · Union-Find · Graph |
+| [Day 4](./Day%20-%204) | [3629. Minimum Jumps via Prime Teleportation](https://leetcode.com/problems/minimum-jumps-to-reach-end-via-prime-teleportation/) | ![Medium](https://img.shields.io/badge/-Medium-f59e0b) | BFS · SPF Sieve · Number Theory |
 
 ---
 
@@ -41,8 +39,8 @@ Each day's folder contains:
 | Metric | Count |
 |--------|------:|
 | Total Problems Solved | 4 |
-| Easy | — |
-| Medium | 2+ |
+| Easy | 0 |
+| Medium | 4 |
 | Hard | 0 |
 | Current Streak | 4 days 🔥 |
 | Language | Python 3 |
@@ -51,9 +49,7 @@ Each day's folder contains:
 
 ## 🔍 Topics Covered
 
-`Union-Find` · `Monotonic Stack` · `BFS` · `Number Theory` · `SPF Sieve` · `Graph Components` · `Greedy`
-
-*(This section grows as new topics appear)*
+`Linked List` · `Two Pointers` · `Matrix` · `Union-Find` · `Monotonic Stack` · `BFS` · `Number Theory` · `SPF Sieve` · `Graph Components` · `Greedy`
 
 ---
 
@@ -62,20 +58,20 @@ Each day's folder contains:
 ```
 Leetcode---Problem/
 │
-├── Day - 1/
-│   ├── solution.py        # Accepted solution with comments
-│   └── README.md          # Full problem breakdown
+├── Day - 1/               # 61. Rotate List
+│   ├── Solution           # Circular link & break — O(n) time, O(1) space
+│   └── README.md
 │
-├── Day - 2/
-│   ├── solution.py
+├── Day - 2/               # 1861. Rotating the Box
+│   ├── Solution           # Gravity simulation + 90° CW rotation — O(m×n)
 │   └── README.md
 │
 ├── Day - 3/               # 3660. Jump Game IX
-│   ├── solution.py        # Union-Find + Monotonic Stack, O(n·α(n))
+│   ├── solution.py        # Component-max stack + Union-Find — O(n·α(n))
 │   └── README.md
 │
 ├── Day - 4/               # 3629. Minimum Jumps via Prime Teleportation
-│   ├── solution.py        # BFS + SPF Sieve + Bucket Clearing, O(n log V)
+│   ├── solution.py        # BFS + SPF Sieve + Bucket Clearing — O(n log V)
 │   └── README.md
 │
 └── README.md              ← you are here
@@ -83,28 +79,19 @@ Leetcode---Problem/
 
 ---
 
-## 💡 What Each README Contains
+## 🚀 Problem Highlights
 
-Every day's README is structured identically so it's easy to navigate:
+### Day 1 — Rotate List
+**The trick:** Don't shift nodes one by one. Connect the tail to the head to make a circle, walk to the new tail at index `length − k − 1`, then break the circle. Two passes, no extra memory.
 
-1. **Problem Statement** — constraints and examples
-2. **Intuition** — why the naive approach fails and what the insight is
-3. **Algorithm** — step-by-step breakdown of the approach
-4. **Solution** — fully commented Python code
-5. **Dry Run** — state-by-state trace through an example
-6. **Complexity Analysis** — time and space, with justification
-
----
-
-## 🚀 Highlighted Solutions
+### Day 2 — Rotating the Box
+**The trick:** The 90° clockwise rotation maps "rightward" in the original to "downward" in the result. So apply gravity first (stones slide right per row using a two-pointer), then apply the standard rotation formula `result[j][m-1-i] = box[i][j]`. Each obstacle resets the gravity pointer independently.
 
 ### Day 3 — Jump Game IX
-**The trick:** Forward and backward jumps are symmetric — any two indices with `a < b` and `nums[a] > nums[b]` can reach each other. The graph is undirected. Find connected components and return the max value per component.
-
-**The non-obvious fix:** Nearest-neighbor (PGE/NSE) spanning fails for arrays like `[30, 21, 5, 35, 24]`. The correct approach: maintain a stack tracking **component max values** (not individual values). When a component's max exceeds the current element, merge them.
+**The non-obvious bug fix:** The standard PGE + NSE spanning tree fails for arrays like `[30, 21, 5, 35, 24]`. When components merge, a future small element must compare against the **component's max value**, not the individual element's value. Maintain a stack of `(component_root, component_max)` pairs — pop and union whenever `component_max > nums[i]`. Single pass, no second scan needed.
 
 ### Day 4 — Minimum Jumps via Prime Teleportation
-**The trick:** Naive BFS is O(n²) — a single prime like 2 can fan out to half the array. Fix: group all indices by their prime factors upfront into buckets. First time a prime is activated, drain and **clear** its bucket. Future activations find it empty → zero redundant work.
+**The trick:** Naive BFS is O(n²) — prime 2 alone could fan out to half the array. Fix: group all indices by their prime factors into `prime_buckets[p]` upfront. First time any index with `nums[i] = p` is dequeued, drain and **clear** its bucket. Future activations find it empty → zero re-work. Uses a smallest-prime-factor (SPF) sieve for O(log V) factorization per number.
 
 ---
 
