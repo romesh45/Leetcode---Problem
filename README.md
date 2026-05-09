@@ -31,7 +31,7 @@ Each day's folder contains:
 | [Day 2](./Day%20-%202) | [1861. Rotating the Box](https://leetcode.com/problems/rotating-the-box/) | ![Medium](https://img.shields.io/badge/-Medium-f59e0b) | Array · Two Pointers · Matrix |
 | [Day 3](./Day%20-%203) | [3660. Jump Game IX](https://leetcode.com/problems/jump-game-ix/) | ![Medium](https://img.shields.io/badge/-Medium-f59e0b) | Monotonic Stack · Union-Find · Graph |
 | [Day 4](./Day%20-%204) | [3629. Minimum Jumps via Prime Teleportation](https://leetcode.com/problems/minimum-jumps-to-reach-end-via-prime-teleportation/) | ![Medium](https://img.shields.io/badge/-Medium-f59e0b) | BFS · SPF Sieve · Number Theory |
-| [Day 5](./Day%20-%205) | [13. Roman to Integer]([https://leetcode.com/problems/jump-game-ix/https://leetcode.com/problems/roman-to-integer/) | ![Easy](https://img.shields.io/badge/-Easy-00c4cc) | Hash Table . Math . String |
+| [Day 5](./Day%20-%205) | [13. Roman to Integer](https://leetcode.com/problems/jump-game-ix/https://leetcode.com/problems/roman-to-integer/) | ![Easy](https://img.shields.io/badge/-Easy-00c4cc) | Hash Table . Math . String |
 
 ---
 
@@ -74,7 +74,7 @@ Leetcode---Problem/
 ├── Day - 4/               # 3629. Minimum Jumps via Prime Teleportation
 │   ├── solution.py        # BFS + SPF Sieve + Bucket Clearing — O(n log V)
 │   └── README.md
-│── Day - 4/               # 13. Roman to Integer
+│── Day - 5/               # 13. Roman to Integer
 │   ├── solution.py        # Hash Table + Math + String — O(n).
 │   └── README.md
 └── README.md              ← you are here
