@@ -31,7 +31,7 @@ Each day's folder contains:
 | [Day 2](./Day%20-%202) | [1861. Rotating the Box](https://leetcode.com/problems/rotating-the-box/) | ![Medium](https://img.shields.io/badge/-Medium-f59e0b) | Array · Two Pointers · Matrix |
 | [Day 3](./Day%20-%203) | [3660. Jump Game IX](https://leetcode.com/problems/jump-game-ix/) | ![Medium](https://img.shields.io/badge/-Medium-f59e0b) | Monotonic Stack · Union-Find · Graph |
 | [Day 4](./Day%20-%204) | [3629. Minimum Jumps via Prime Teleportation](https://leetcode.com/problems/minimum-jumps-to-reach-end-via-prime-teleportation/) | ![Medium](https://img.shields.io/badge/-Medium-f59e0b) | BFS · SPF Sieve · Number Theory |
-| [Day 5](./Day%20-%205) | [13. Roman to Integer](https://leetcode.com/problems/jump-game-ix/) | ![Medium](https://img.shields.io/badge/-Medium-f59e0b) | Monotonic Stack · Union-Find · Graph |
+| [Day 5](./Day%20-%205) | [13. Roman to Integer]([https://leetcode.com/problems/jump-game-ix/](https://leetcode.com/problems/roman-to-integer/) | ![Easy](https://img.shields.io/badge/-Medium-#00af9b) | Hash Table . Math . String |
 
 ---
 
@@ -39,11 +39,11 @@ Each day's folder contains:
 
 | Metric | Count |
 |--------|------:|
-| Total Problems Solved | 4 |
+| Total Problems Solved | 5 |
 | Easy | 1 |
 | Medium | 4 |
 | Hard | 0 |
-| Current Streak | 4 days 🔥 |
+| Current Streak | 5 days 🔥 |
 | Language | Python 3 |
 
 ---
@@ -74,7 +74,9 @@ Leetcode---Problem/
 ├── Day - 4/               # 3629. Minimum Jumps via Prime Teleportation
 │   ├── solution.py        # BFS + SPF Sieve + Bucket Clearing — O(n log V)
 │   └── README.md
-│
+│── Day - 4/               # 13. Roman to Integer
+│   ├── solution.py        # Hash Table + Math + String — O(n).
+│   └── README.md
 └── README.md              ← you are here
 ```
 
@@ -93,6 +95,9 @@ Leetcode---Problem/
 
 ### Day 4 — Minimum Jumps via Prime Teleportation
 **The trick:** Naive BFS is O(n²) — prime 2 alone could fan out to half the array. Fix: group all indices by their prime factors into `prime_buckets[p]` upfront. First time any index with `nums[i] = p` is dequeued, drain and **clear** its bucket. Future activations find it empty → zero re-work. Uses a smallest-prime-factor (SPF) sieve for O(log V) factorization per number.
+
+### Day 5 — Roman to Integer
+**The trick:** The trick: Standard left-to-right parsing often requires messy look-ahead logic to determine if a character like "I" is standalone or part of a subtraction like "IV." Fix: By iterating right-to-left, the problem becomes a simple comparison against the last_seen value. If the current numeral is smaller than the one to its right (e.g., I before V), you subtract its value from the total; otherwise, you add it. This "look-back" logic converts the subtraction rules into a streamlined single-pass accumulation, using a fixed hash map to ensure each symbol lookup remains O(1). Since the symbol set is finite and the string is traversed exactly once, the complexity stays a crisp O(n) time and O(1) space..
 
 ---
 
