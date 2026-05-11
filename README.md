@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🧠 LeetCode Daily Challenge
+# 🧠 LeetCode Daily Code
 
 ### A disciplined log of daily problem solving — one question, every day, no skips.
 
