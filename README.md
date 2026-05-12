@@ -2,7 +2,7 @@
 
 # 🧠 LeetCode Daily Mission
 
-### A disciplined log of daily problem solving — one question, every day, no skips.
+### A disciplined log of daily problem solving — one question, every day, no skip
 
 ![Language](https://img.shields.io/badge/Language-Python%203-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Status](https://img.shields.io/badge/Status-Active-22c55e?style=for-the-badge)
