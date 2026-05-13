@@ -1,4 +1,4 @@
-# Day 9 — LeetCode Daily Chllenge
+# Day 9 — LeetCode Daily Challenge
 
 ## 1674. Minimum Moves to Make Array Complementary
 
