@@ -1,4 +1,4 @@
-# Day 7 — LeetCode Challenge
+# Day 8 — LeetCode Challenge
 
 ## 1665. Minimum Initial Energy to Finish Tasks
 
@@ -257,4 +257,4 @@ Only sorting by **`minimum − actual` descending** gives a provably optimal arr
 
 ---
 
-*Day 7 of the LeetCode Daily Challenge*
+*Day 8 of the LeetCode Daily Challenge*
