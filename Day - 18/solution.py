@@ -1,41 +1,24 @@
-from typing import List
-
-
 class Solution:
     def search(self, nums: List[int], target: int) -> int:
-        # Modified binary search.
-        #
-        # A rotated sorted array has exactly ONE break point. So for any mid,
-        # the split into [left..mid] and [mid..right] always leaves at least
-        # one half fully sorted. Identify the sorted half (its value range is
-        # known), test whether target lies inside it, and discard half.
         left, right = 0, len(nums) - 1
-
         while left <= right:
             mid = (left + right) // 2
-
             if nums[mid] == target:
                 return mid
-
-            # Is the LEFT half [left..mid] sorted?
-            # nums[left] <= nums[mid] also covers the no-rotation / 1-element case.
             if nums[left] <= nums[mid]:
-                # Left half is sorted — its range is [nums[left], nums[mid]).
                 if nums[left] <= target < nums[mid]:
-                    right = mid - 1      # target is inside the sorted left half
+                    right = mid - 1      
                 else:
-                    left = mid + 1       # target must be in the right half
+                    left = mid + 1       
             else:
-                # Right half [mid..right] is sorted — range is (nums[mid], nums[right]].
                 if nums[mid] < target <= nums[right]:
-                    left = mid + 1       # target is inside the sorted right half
+                    left = mid + 1      
                 else:
-                    right = mid - 1      # target must be in the left half
-
+                    right = mid - 1      
         return -1
 
 
-# ── Quick tests ──────────────────────────────────────────────────────────────
+# ── Quick tests ───────────
 if __name__ == "__main__":
     sol = Solution()
     print(sol.search([4, 5, 6, 7, 0, 1, 2], 0))     # 4
