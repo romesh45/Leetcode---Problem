@@ -1,38 +1,23 @@
-# 1914. Cyclically Rotating a Grid
-# https://leetcode.com/problems/cyclically-rotating-a-grid/
-# Difficulty: Medium | Time: O(m*n) | Space: O(m*n)
-
-from typing import List
-
 class Solution:
     def rotateGrid(self, grid: List[List[int]], k: int) -> List[List[int]]:
         m, n = len(grid), len(grid[0])
-
         def extract_layer(layer: int) -> List[int]:
             r1, c1 = layer, layer
             r2, c2 = m - 1 - layer, n - 1 - layer
             elements = []
-
-            # Top row: left → right
             for c in range(c1, c2 + 1):
                 elements.append(grid[r1][c])
-            # Right col: top+1 → bottom
             for r in range(r1 + 1, r2 + 1):
                 elements.append(grid[r][c2])
-            # Bottom row: right-1 → left
             for c in range(c2 - 1, c1 - 1, -1):
                 elements.append(grid[r2][c])
-            # Left col: bottom-1 → top+1
             for r in range(r2 - 1, r1, -1):
                 elements.append(grid[r][c1])
-
             return elements
-
         def place_layer(layer: int, elements: List[int]) -> None:
             r1, c1 = layer, layer
             r2, c2 = m - 1 - layer, n - 1 - layer
             idx = 0
-
             for c in range(c1, c2 + 1):
                 grid[r1][c] = elements[idx]; idx += 1
             for r in range(r1 + 1, r2 + 1):
@@ -41,16 +26,13 @@ class Solution:
                 grid[r2][c] = elements[idx]; idx += 1
             for r in range(r2 - 1, r1, -1):
                 grid[r][c1] = elements[idx]; idx += 1
-
         num_layers = min(m, n) // 2
-
         for layer in range(num_layers):
             elements = extract_layer(layer)
             L = len(elements)
-            k_eff = k % L                            # avoid redundant full rotations
+            k_eff = k % L                            
             rotated = elements[k_eff:] + elements[:k_eff]
             place_layer(layer, rotated)
-
         return grid
 
 
