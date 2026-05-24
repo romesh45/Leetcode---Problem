@@ -1,7 +1,3 @@
-# 13. Roman to Integer
-# https://leetcode.com/problems/roman-to-integer/
-# Difficulty: Easy | Time: O(n) | Space: O(1)
-
 class Solution:
     def romanToInt(self, s: str) -> int:
         values = {
@@ -10,14 +6,10 @@ class Solution:
             'C': 100, 'D': 500,
             'M': 1000
         }
-
         result = 0
-
         for i in range(len(s)):
             curr = values[s[i]]
             next_val = values[s[i + 1]] if i + 1 < len(s) else 0
-
-            # If current value is less than next → subtraction case (IV, IX, XL, XC, CD, CM)
             if curr < next_val:
                 result -= curr
             else:
