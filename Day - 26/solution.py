@@ -1,10 +1,4 @@
-from sortedcontainers import SortedList
-from typing import List
-
-
 class SegTree:
-    """Iterative max segment tree: point-assign + inclusive range-max query."""
-
     def __init__(self, n: int):
         self.size = 1
         while self.size < n:
@@ -19,7 +13,7 @@ class SegTree:
             self.tree[i] = max(self.tree[2 * i], self.tree[2 * i + 1])
             i >>= 1
 
-    def query(self, l: int, r: int) -> int:        # inclusive [l, r]
+    def query(self, l: int, r: int) -> int:  
         res = 0
         l += self.size
         r += self.size + 1
@@ -34,23 +28,6 @@ class SegTree:
 
 class Solution:
     def getResults(self, queries: List[List[int]]) -> List[bool]:
-        # ── Model ─────────────────────────────────────────────────────────────
-        # Obstacles partition [0, ∞) into gaps. A block of size sz fits in
-        # [0, x] iff some usable gap of length ≥ sz lies inside [0, x].
-        #
-        # Two kinds of usable gaps:
-        #   (a) FULL gaps between two consecutive obstacles BOTH ≤ x.
-        #       Store each at its RIGHT endpoint: seg[p] = p - prev(p).
-        #       Then seg.query(0, x) = largest full gap entirely inside [0, x]
-        #       (gaps whose right endpoint > x are naturally excluded).
-        #   (b) The TRAILING partial gap from the last obstacle ≤ x up to x:
-        #       partial = x - last.  (Segment tree can't model this — its right
-        #       boundary is x, not an obstacle.)
-        #
-        # Answer: max(full_gap, partial_gap) ≥ sz.
-        #
-        # We keep an implicit obstacle at position 0 (the left boundary).
-
         MAXX = max(q[1] for q in queries)
         seg = SegTree(MAXX + 1)
         obstacles = SortedList([0])
@@ -58,21 +35,19 @@ class Solution:
 
         for q in queries:
             if q[0] == 1:
-                # ── Type 1: build obstacle at x → SPLIT the gap it lands in ──
                 x = q[1]
                 idx = obstacles.bisect_left(x)
                 prev = obstacles[idx - 1]
-                seg.update(x, x - prev)              # new gap ending at x
+                seg.update(x, x - prev)              
                 if idx < len(obstacles):
                     nxt = obstacles[idx]
-                    seg.update(nxt, nxt - x)         # successor's gap shrinks
+                    seg.update(nxt, nxt - x)         
                 obstacles.add(x)
             else:
-                # ── Type 2: can a block of size sz fit within [0, x]? ──
                 x, sz = q[1], q[2]
-                best = seg.query(0, x)               # (a) largest full gap ≤ x
+                best = seg.query(0, x)               
                 last = obstacles[obstacles.bisect_right(x) - 1]
-                partial = x - last                   # (b) trailing partial gap
+                partial = x - last                   
                 res.append(max(best, partial) >= sz)
 
         return res
