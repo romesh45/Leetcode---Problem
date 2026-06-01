@@ -8,7 +8,7 @@ class Solution:
         return total
 
 
-# ── Quick tests ───────────────────────
+# ── Quick tests ─────────────────────── #
 if __name__ == "__main__":
     sol = Solution()
     print(sol.minimumCost([1, 2, 3]))                 # 5
