@@ -1,47 +1,18 @@
-from typing import List
-
-
 class Solution:
-    def earliestFinishTime(
-        self,
-        landStartTime: List[int],
-        landDuration: List[int],
-        waterStartTime: List[int],
-        waterDuration: List[int],
-    ) -> int:
-        # Same problem as the "I" version, but n, m ≤ 5·10⁴, so an O(n·m)
-        # brute force over all pairs (≈ 2.5·10⁹) would TLE. We need O(n + m).
-        #
-        # ── The decoupling insight ────────────────────────────────────────────
-        # For a "land → water" plan with a fixed water ride j:
-        #     finish = max(landFinish, waterStart[j]) + waterDur[j]
-        # This is monotonically NON-DECREASING in landFinish. So regardless of
-        # which water ride we choose, the optimal land ride is always the one
-        # that finishes EARLIEST. The two choices therefore become independent.
-        #
-        # ⇒ Precompute the single best completion time per category, then sweep
-        #   the other category once.
+    def earliestFinishTime(self,landStartTime: List[int],landDuration: List[int],waterStartTime: List[int],waterDuration: List[int],) -> int:
         best_land_done = min(s + d for s, d in zip(landStartTime, landDuration))
         best_water_done = min(s + d for s, d in zip(waterStartTime, waterDuration))
-
         ans = float("inf")
-
-        # Plan A: land first, then water — use the earliest land completion.
         for s, d in zip(waterStartTime, waterDuration):
             ans = min(ans, max(best_land_done, s) + d)
-
-        # Plan B: water first, then land — use the earliest water completion.
         for s, d in zip(landStartTime, landDuration):
             ans = min(ans, max(best_water_done, s) + d)
-
         return ans
 
 
 # ── Brute-force reference (O(n·m)) — only for cross-checking on small inputs ──
 class SolutionBrute:
-    def earliestFinishTime(
-        self, landStartTime, landDuration, waterStartTime, waterDuration
-    ) -> int:
+    def earliestFinishTime(self, landStartTime, landDuration, waterStartTime, waterDuration) -> int:
         best = float("inf")
         for i in range(len(landStartTime)):
             ld = landStartTime[i] + landDuration[i]
