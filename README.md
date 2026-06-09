@@ -7,7 +7,7 @@
 ![Language](https://img.shields.io/badge/Language-Python%203-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Status](https://img.shields.io/badge/Status-Active-22c55e?style=for-the-badge)
 ![Days](https://img.shields.io/badge/Days%20Completed-36-f59e0b?style=for-the-badge)
-![Profile](https://img.shields.io/badge/LeetCode-romesh45-FFA116?style=for-the-badge&logo=leetcode&logoColor=white)
+![Profile](https://img.shields.io/badge/LeetCode-user9694nN-FFA116?style=for-the-badge&logo=leetcode&logoColor=white)
 
 </div>
 
