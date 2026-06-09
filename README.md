@@ -6,7 +6,7 @@
 
 ![Language](https://img.shields.io/badge/Language-Python%203-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Status](https://img.shields.io/badge/Status-Active-22c55e?style=for-the-badge)
-![Days](https://img.shields.io/badge/Days%20Completed-20-f59e0b?style=for-the-badge)
+![Days](https://img.shields.io/badge/Days%20Completed-36-f59e0b?style=for-the-badge)
 ![Profile](https://img.shields.io/badge/LeetCode-romesh45-FFA116?style=for-the-badge&logo=leetcode&logoColor=white)
 
 </div>
@@ -47,6 +47,22 @@ Each day's folder contains:
 | [Day 18](./Day%20-%2018) | [33. Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/) | ![Medium](https://img.shields.io/badge/-Medium-f59e0b) | Binary Search · Sorted-Half Detection |
 | [Day 19](./Day%20-%2019) | [1752. Check if Array Is Sorted and Rotated](https://leetcode.com/problems/check-if-array-is-sorted-and-rotated/) | ![Easy](https://img.shields.io/badge/-Easy-00c4cc) | Circular Scan · Counting |
 | [Day 20](./Day%20-%2020) | [1340. Jump Game V](https://leetcode.com/problems/jump-game-v/) | ![Hard](https://img.shields.io/badge/-Hard-ef4444) | DP on DAG · Memoized DFS · Implicit Graph |
+| [Day 21](./Day%20-%2021) | [1871. Jump Game VII](https://leetcode.com/problems/jump-game-vii/) | ![Medium](https://img.shields.io/badge/-Medium-f59e0b) | BFS · Sliding Window · Prefix Sum |
+| [Day 22](./Day%20-%2022) | [3120. Count the Number of Special Characters I](https://leetcode.com/problems/count-the-number-of-special-characters-i/) | ![Easy](https://img.shields.io/badge/-Easy-00c4cc) | Hash Set · Counting · String |
+| [Day 23](./Day%20-%2023) | [3121. Count the Number of Special Characters II](https://leetcode.com/problems/count-the-number-of-special-characters-ii/) | ![Medium](https://img.shields.io/badge/-Medium-f59e0b) | Hash Map · Index Tracking · String |
+| [Day 24](./Day%20-%2024) | [3093. Longest Common Suffix Queries](https://leetcode.com/problems/longest-common-suffix-queries/) | ![Hard](https://img.shields.io/badge/-Hard-ef4444) | Trie · Reversed Strings · String Matching |
+| [Day 25](./Day%20-%2025) | [3300. Minimum Element After Replacement With Digit Sum](https://leetcode.com/problems/minimum-element-after-replacement-with-digit-sum/) | ![Easy](https://img.shields.io/badge/-Easy-00c4cc) | Math · Digit Sum · Single Pass |
+| [Day 26](./Day%20-%2026) | [3161. Block Placement Queries](https://leetcode.com/problems/block-placement-queries/) | ![Hard](https://img.shields.io/badge/-Hard-ef4444) | Segment Tree · Sorted Set · Gap Modeling |
+| [Day 27](./Day%20-%2027) | [2126. Destroying Asteroids](https://leetcode.com/problems/destroying-asteroids/) | ![Medium](https://img.shields.io/badge/-Medium-f59e0b) | Greedy · Sorting · Exchange Argument |
+| [Day 28](./Day%20-%2028) | [2144. Minimum Cost of Buying Candies With Discount](https://leetcode.com/problems/minimum-cost-of-buying-candies-with-discount/) | ![Easy](https://img.shields.io/badge/-Easy-00c4cc) | Greedy · Sorting · Modular Indexing |
+| [Day 29](./Day%20-%2029) | [3633. Earliest Finish Time for Land and Water Rides I](https://leetcode.com/problems/earliest-finish-time-for-land-and-water-rides-i/) | ![Easy](https://img.shields.io/badge/-Easy-00c4cc) | Brute Force · Enumeration · Greedy |
+| [Day 30](./Day%20-%2030) | [3635. Earliest Finish Time for Land and Water Rides II](https://leetcode.com/problems/earliest-finish-time-for-land-and-water-rides-ii/) | ![Medium](https://img.shields.io/badge/-Medium-f59e0b) | Greedy · Decoupling · Monotonicity |
+| [Day 31](./Day%20-%2031) | [3751. Total Waviness of Numbers in Range I](https://leetcode.com/problems/total-waviness-of-numbers-in-range-i/) | ![Medium](https://img.shields.io/badge/-Medium-f59e0b) | Math · Digit Scan · Brute Force |
+| [Day 32](./Day%20-%2032) | [3753. Total Waviness of Numbers in Range II](https://leetcode.com/problems/total-waviness-of-numbers-in-range-ii/) | ![Hard](https://img.shields.io/badge/-Hard-ef4444) | Digit DP · Prefix Difference · Memoization |
+| [Day 33](./Day%20-%2033) | [2574. Left and Right Sum Differences](https://leetcode.com/problems/left-and-right-sum-differences/) | ![Easy](https://img.shields.io/badge/-Easy-00c4cc) | Array · Prefix Sum · Single Pass |
+| [Day 34](./Day%20-%2034) | [2196. Create Binary Tree From Descriptions](https://leetcode.com/problems/create-binary-tree-from-descriptions/) | ![Medium](https://img.shields.io/badge/-Medium-f59e0b) | Hash Table · Binary Tree · Tree Construction |
+| [Day 35](./Day%20-%2035) | [2161. Partition Array According to Given Pivot](https://leetcode.com/problems/partition-array-according-to-given-pivot/) | ![Medium](https://img.shields.io/badge/-Medium-f59e0b) | Stable Partition · Three-Way Split · Two Pointers |
+| [Day 36](./Day%20-%2036) | [3689. Maximum Total Subarray Value I](https://leetcode.com/problems/maximum-total-subarray-value-i/) | ![Medium](https://img.shields.io/badge/-Medium-f59e0b) | Math · Greedy · Observation |
 
 ---
 
@@ -54,18 +70,18 @@ Each day's folder contains:
 
 | Metric | Count |
 |--------|------:|
-| Total Problems Solved | 20 |
-| Easy | 4 |
-| Medium | 12 |
-| Hard | 4 |
-| Current Streak | 20 days 🔥 |
+| Total Problems Solved | 36 |
+| Easy | 9 |
+| Medium | 20 |
+| Hard | 7 |
+| Current Streak | 36 days 🔥 |
 | Language | Python 3 |
 
 ---
 
 ## 🔍 Topics Covered
 
-`Linked List` · `Two Pointers` · `Matrix` · `Union-Find` · `Monotonic Stack` · `BFS` · `DFS` · `Number Theory` · `SPF Sieve` · `Graph Components` · `Graph Reachability` · `Dynamic Programming` · `DP on DAG` · `Memoized DFS` · `Simulation` · `Greedy` · `Exchange Argument` · `Hash Table` · `Hash Set` · `Math` · `Binary Search` · `Rotated Sorted Array` · `Difference Array` · `Prefix Sum` · `Range Updates` · `Bit Manipulation` · `Bitmask as Set` · `Trie` · `Bucket Clearing` · `Circular Scan` · `Sorted Arrays`
+`Linked List` · `Two Pointers` · `Matrix` · `Union-Find` · `Monotonic Stack` · `BFS` · `DFS` · `Number Theory` · `SPF Sieve` · `Graph Components` · `Graph Reachability` · `Dynamic Programming` · `DP on DAG` · `Digit DP` · `Memoized DFS` · `Simulation` · `Greedy` · `Exchange Argument` · `Decoupling` · `Hash Table` · `Hash Set` · `Hash Map` · `Math` · `Binary Search` · `Rotated Sorted Array` · `Difference Array` · `Prefix Sum` · `Prefix Difference` · `Range Updates` · `Bit Manipulation` · `Bitmask as Set` · `Trie` · `Suffix Trie` · `Bucket Clearing` · `Sliding Window` · `Segment Tree` · `Sorted Set` · `Digit Sum` · `Binary Tree` · `Tree Construction` · `Stable Partition` · `Three-Way Partition` · `Circular Scan` · `Sorted Arrays`
 
 ---
 
@@ -154,6 +170,70 @@ Leetcode---Problem/
 │   ├── solution.py         # Memoized DFS on DAG with break-on-block — O(n·d)
 │   └── README.md
 │
+├── Day - 21/               # 1871. Jump Game VII
+│   ├── solution.py         # BFS + sliding frontier pointer — O(n)
+│   └── README.md
+│
+├── Day - 22/               # 3120. Count the Number of Special Characters I
+│   ├── solution.py         # Two presence sets (lower/upper) — O(n)
+│   └── README.md
+│
+├── Day - 23/               # 3121. Count the Number of Special Characters II
+│   ├── solution.py         # last-lower vs first-upper index maps — O(n)
+│   └── README.md
+│
+├── Day - 24/               # 3093. Longest Common Suffix Queries
+│   ├── solution.py         # Reverse-trie with per-node best index — O(C + Q)
+│   └── README.md
+│
+├── Day - 25/               # 3300. Minimum Element After Replacement With Digit Sum
+│   ├── solution.py         # Streaming min of digit sums — O(n)
+│   └── README.md
+│
+├── Day - 26/               # 3161. Block Placement Queries
+│   ├── solution.py         # Max segment tree + sorted obstacle set — O(n log M)
+│   └── README.md
+│
+├── Day - 27/               # 2126. Destroying Asteroids
+│   ├── solution.py         # Greedy sort ascending + sweep — O(n log n)
+│   └── README.md
+│
+├── Day - 28/               # 2144. Minimum Cost of Buying Candies With Discount
+│   ├── solution.py         # Sort descending, skip every 3rd — O(n log n)
+│   └── README.md
+│
+├── Day - 29/               # 3633. Earliest Finish Time for Land and Water Rides I
+│   ├── solution.py         # Brute force pairs × both orders — O(n·m)
+│   └── README.md
+│
+├── Day - 30/               # 3635. Earliest Finish Time for Land and Water Rides II
+│   ├── solution.py         # Decoupled best-completion + sweep — O(n + m)
+│   └── README.md
+│
+├── Day - 31/               # 3751. Total Waviness of Numbers in Range I
+│   ├── solution.py         # Brute-force digit peak/valley scan — O(R·D)
+│   └── README.md
+│
+├── Day - 32/               # 3753. Total Waviness of Numbers in Range II
+│   ├── solution.py         # Digit DP + f(num2) − f(num1−1) — O(D)
+│   └── README.md
+│
+├── Day - 33/               # 2574. Left and Right Sum Differences
+│   ├── solution.py         # Running prefix + total-minus-prefix — O(n), O(1) space
+│   └── README.md
+│
+├── Day - 34/               # 2196. Create Binary Tree From Descriptions
+│   ├── solution.py         # Value→node map + root via "not a child" — O(n)
+│   └── README.md
+│
+├── Day - 35/               # 2161. Partition Array According to Given Pivot
+│   ├── solution.py         # Stable 3-way bucket partition — O(n)
+│   └── README.md
+│
+├── Day - 36/               # 3689. Maximum Total Subarray Value I
+│   ├── solution.py         # k × (globalMax − globalMin) — O(n)
+│   └── README.md
+│
 └── README.md               ← you are here
 ```
 
@@ -220,6 +300,54 @@ Leetcode---Problem/
 
 ### Day 20 — Jump Game V
 **The trick:** Every jump goes from a strictly higher value to a strictly lower one, so the implicit graph is a **DAG** — memoized DFS is safe. The killer micro-optimization is the **`break` on `arr[k] >= arr[i]`**: once any "in-between" index meets or exceeds `arr[i]`, it blocks both itself and every further index in that direction (it would violate the "lower-than-launch" rule for any longer jump). This reduces per-state work from O(d²) to O(d), giving an overall O(n·d). For deeper chains, a sort-by-height bottom-up variant avoids recursion entirely.
+
+### Day 21 — Jump Game VII
+**The trick:** Reachability where each `'0'` index connects to every `'0'` in `[i + minJump, i + maxJump]`. Naive BFS rescans overlapping windows → O(n·maxJump) TLE. The fix is a **sliding frontier pointer**: since BFS dequeues indices in non-decreasing order, track the largest index ever scanned and start the next window at `max(i + minJump, farthest + 1)`. Every index is examined at most once → O(n).
+
+### Day 22 — Count the Number of Special Characters I
+**The trick:** We only need **presence**, not counts — a letter is "special" if it appears in both cases at least once. Two hash sets (`lower_seen`, `upper_seen`) and a 26-bounded final tally do the job: count letters `c` where `c ∈ lower_seen` and `c.upper() ∈ upper_seen`. O(n) time, O(1) space.
+
+### Day 23 — Count the Number of Special Characters II
+**The trick:** The added "every lowercase before the first uppercase" rule collapses to comparing **two indices per letter**: `last_lower[c] < first_upper[c.upper()]`. Why those two extremes? The latest lowercase is the hardest to beat, and the earliest uppercase is the lowest bar to clear — if those pass, every actual pair does. Other index pairings (first/first, last/last) silently fail.
+
+### Day 24 — Longest Common Suffix Queries
+**The trick:** "Longest common suffix" = "longest common prefix of the reverses." Build a **trie over reversed container strings**, and at every node pre-store the **best** container index passing through it (shortest length, then earliest). A query just walks `reversed(query)` down as far as it goes and returns the `best` at the deepest node — the empty-suffix fallback drops out for free at the root. O(C + Q).
+
+### Day 25 — Minimum Element After Replacement With Digit Sum
+**The trick:** The answer only needs the *minimum* of the digit-sum array, so stream each digit sum straight into `min()` — no intermediate array. Extract digits with `% 10` / `// 10` (faster than string conversion). O(n) time, O(1) space. The digit sum of `nums[i] ≤ 10⁴` is bounded by 36.
+
+### Day 26 — Block Placement Queries
+**The trick:** Obstacles carve the line into gaps; a block of size `sz` fits in `[0, x]` iff a usable gap ≥ `sz` lies inside. Store each gap at its **right endpoint** in a **max segment tree** (prefix-max query auto-excludes gaps past `x`), and add the trailing partial gap `x − last`. Inserting an obstacle **splits** a gap into two point-updates — one of them *decreases*, which is exactly why a Fenwick max won't work and a segment tree is required. O(n log M).
+
+### Day 27 — Destroying Asteroids
+**The trick:** Mass only ever grows, so destroying the **smallest reachable asteroid first** is optimal — sort ascending and sweep, absorbing as you go. Failure is genuine because every order absorbs the same cumulative mass: at the first asteroid you can't beat, you already hold the maximum possible mass. Provable via an exchange argument. (Mind 64-bit overflow outside Python — mass reaches ~10¹⁰.)
+
+### Day 28 — Minimum Cost of Buying Candies With Discount
+**The trick:** The free candy in any triple is the cheapest of the three (`≤ min(bought)`). To save the most, make freebies as *expensive* as legally allowed: **sort descending** and skip every index `≡ 2 (mod 3)`. Sorting ascending would be both costlier *and* illegal (freeing a large candy violates the `≤ min` rule).
+
+### Day 29 — Earliest Finish Time for Land and Water Rides I
+**The trick:** For a fixed (land, water) pair, each order's finish is `max(firstFinish, secondOpen) + secondDuration` — the `max` models waiting for the second ride to open. With `n, m ≤ 100`, brute-force all pairs × both orders in O(n·m). Both orders must be tried because waiting is asymmetric.
+
+### Day 30 — Earliest Finish Time for Land and Water Rides II
+**The trick:** Same problem, but `n, m ≤ 5·10⁴` kills the O(n·m) brute force. The two orders **decouple**: since `max(landFinish, waterOpen) + waterDur` is monotonic in `landFinish`, the best land ride (earliest completion) is optimal against *every* water ride. Precompute each category's best completion time, sweep the other once → O(n + m).
+
+### Day 31 — Total Waviness of Numbers in Range I
+**The trick:** With `num2 ≤ 10⁵`, just brute-force every number and count interior digits that are strict peaks/valleys (loop indices `1 .. len-2`). Strictness matters — `122` and `100` score 0 because of tied neighbours. Numbers with `< 3` digits fall out for free (empty interior loop). O(R·D).
+
+### Day 32 — Total Waviness of Numbers in Range II
+**The trick:** `num2 ≤ 10¹⁵` forces **digit DP** with `f(num2) − f(num1 − 1)`. Carry the previous two digits so placing a new digit completes a triple and reveals whether the middle is a peak/valley. The crux is the **distribution line `wav += w + add * c`** — a peak discovered high in the tree adds +1 to *every* number flowing through that branch. Returning `(count, sum)` together is what makes summing-over-a-range work.
+
+### Day 33 — Left and Right Sum Differences
+**The trick:** No need to build both prefix and suffix arrays. The array partitions into `left + nums[i] + right = total`, so `right = total − left − nums[i]` falls out arithmetically. Carry a running `left` and derive `right` each step. O(n) time, **O(1) extra space**.
+
+### Day 34 — Create Binary Tree From Descriptions
+**The trick:** Index nodes by their unique value in a `dict`, creating each node lazily via a `get()` helper so the same physical node is reused wherever it appears. The root is the one value **never seen as a child**. ⚠️ Gotcha: don't redefine `TreeNode` on LeetCode — it shadows the judge's class and the serializer rejects your return with a `TypeError`.
+
+### Day 35 — Partition Array According to Given Pivot
+**The trick:** It's a **stable** three-way partition — relative order within the "less" and "greater" groups must survive, which rules out the swap-based Dutch National Flag. Bucket elements into `less` and `greater` in scan order (preserving order for free), count the pivots, then stitch `less + [pivot]*count + greater`. O(n).
+
+### Day 36 — Maximum Total Subarray Value I
+**The trick:** For any subarray, `max(sub) ≤ globalMax` and `min(sub) ≥ globalMin`, so its value `≤ globalMax − globalMin` — and the whole array hits that bound exactly. Since repeats are allowed, just pick the whole array `k` times: the answer collapses to **`k × (globalMax − globalMin)`**. (Watch 64-bit overflow — up to ~10¹⁴.)
 
 ---
 
