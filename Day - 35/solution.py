@@ -1,30 +1,19 @@
-from typing import List
-
-
 class Solution:
     def pivotArray(self, nums: List[int], pivot: int) -> List[int]:
-        # Stable 3-way partition.
-        # Scan left to right ONCE, bucketing into:
-        #   less    — elements < pivot, in original order
-        #   greater — elements > pivot, in original order
-        #   equal_count — how many elements == pivot (all identical, just count)
-        # Then stitch: [less...] + [pivot repeated] + [greater...].
         less = []
         greater = []
         equal_count = 0
-
         for x in nums:
             if x < pivot:
-                less.append(x)        # append in scan order ⇒ relative order kept
+                less.append(x)        
             elif x > pivot:
-                greater.append(x)     # same — relative order kept
+                greater.append(x)     
             else:
-                equal_count += 1      # every pivot value is identical → count only
-
+                equal_count += 1      
         return less + [pivot] * equal_count + greater
 
 
-# ── Quick tests ──────────────────────────────────────────────────────────────
+# ── Quick tests ──────────────────────
 if __name__ == "__main__":
     sol = Solution()
     print(sol.pivotArray([9, 12, 5, 10, 14, 3, 10], 10))   # [9, 5, 3, 10, 10, 12, 14]
