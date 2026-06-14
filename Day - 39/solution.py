@@ -1,34 +1,17 @@
-from collections import deque
-from typing import List
-
-
 class Solution:
     def assignEdgeWeights(self, edges: List[List[int]], queries: List[List[int]]) -> List[int]:
         MOD = 10**9 + 7
         n = len(edges) + 1
-
-        # ── The parity math carries over from version I ───────────────────────
-        # A path with d edges has an odd total cost ⇔ an odd number of its
-        # edges receive weight 1 → 2^(d-1) assignments (first-edge flip
-        # bijection). d == 0 (u == v) → cost 0, even → 0 ways.
-        #
-        # ── What's new in version II ──────────────────────────────────────────
-        # Up to 10^5 arbitrary (u, v) queries. The path length is
-        #     d(u, v) = depth[u] + depth[v] - 2 * depth[LCA(u, v)]
-        # so we need fast LCA → binary lifting, O(log n) per query.
         adj = [[] for _ in range(n + 1)]
         for u, v in edges:
             adj[u].append(v)
             adj[v].append(u)
-
         LOG = max(1, n.bit_length())
         depth = [0] * (n + 1)
-        up = [[0] * (n + 1) for _ in range(LOG)]   # up[j][v] = 2^j-th ancestor of v
-
-        # BFS from root 1: fills depth[] and immediate parents up[0][].
+        up = [[0] * (n + 1) for _ in range(LOG)]   
         visited = [False] * (n + 1)
         visited[1] = True
-        up[0][1] = 1                                # root's parent = itself (safe lift)
+        up[0][1] = 1                                
         queue = deque([1])
         while queue:
             node = queue.popleft()
@@ -38,18 +21,13 @@ class Solution:
                     depth[nxt] = depth[node] + 1
                     up[0][nxt] = node
                     queue.append(nxt)
-
-        # Binary-lifting table: the 2^j-th ancestor is the 2^(j-1)-th ancestor
-        # of the 2^(j-1)-th ancestor.
         for j in range(1, LOG):
             upj, upj1 = up[j], up[j - 1]
             for v in range(1, n + 1):
                 upj[v] = upj1[upj1[v]]
-
         def lca(u: int, v: int) -> int:
             if depth[u] < depth[v]:
                 u, v = v, u
-            # 1) Lift the deeper node up to the same depth.
             diff = depth[u] - depth[v]
             j = 0
             while diff:
@@ -59,18 +37,13 @@ class Solution:
                 j += 1
             if u == v:
                 return u
-            # 2) Lift both in decreasing powers while they differ; they end
-            #    one step below the LCA.
             for j in range(LOG - 1, -1, -1):
                 if up[j][u] != up[j][v]:
                     u, v = up[j][u], up[j][v]
             return up[0][u]
-
-        # Precompute powers of 2 — d can reach n - 1; avoids per-query pow().
         pow2 = [1] * n
         for i in range(1, n):
             pow2[i] = pow2[i - 1] * 2 % MOD
-
         ans = []
         for u, v in queries:
             d = depth[u] + depth[v] - 2 * depth[lca(u, v)]
@@ -109,7 +82,7 @@ class SolutionBrute:
         return out
 
 
-# ── Quick tests ──────────────────────────────────────────────────────────────
+# ── Quick tests ────────────────────────────
 if __name__ == "__main__":
     sol = Solution()
     print(sol.assignEdgeWeights([[1, 2]], [[1, 1], [1, 2]]))
