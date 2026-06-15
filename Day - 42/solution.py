@@ -1,12 +1,3 @@
-from typing import Optional
-
-# NOTE FOR LEETCODE SUBMISSION:
-# LeetCode already defines `ListNode` — do NOT include the class below when you
-# submit (redefining it shadows the judge's version). It's defined here ONLY so
-# this file runs locally. Submit just the Solution class.
-
-
-# Definition for singly-linked list.
 class ListNode:
     def __init__(self, val=0, next=None):
         self.val = val
@@ -15,27 +6,19 @@ class ListNode:
 
 class Solution:
     def deleteMiddle(self, head: Optional[ListNode]) -> Optional[ListNode]:
-        # A single node → its middle is itself → deleting leaves an empty list.
-        # Handle upfront so `prev` is guaranteed non-None at splice time.
         if not head or not head.next:
             return None
-
-        # Fast & slow: fast moves 2, slow moves 1. The loop runs ⌊n/2⌋ times,
-        # so slow advances ⌊n/2⌋ nodes → lands exactly on the middle index.
-        # `prev` trails slow so we can unlink the middle from its predecessor.
         prev = None
         slow, fast = head, head
         while fast and fast.next:
             prev = slow
             slow = slow.next
             fast = fast.next.next
-
-        # Splice out the middle node `slow`.
         prev.next = slow.next
         return head
 
 
-# ── Local helpers ────────────────────────────────────────────────────────────
+# ── Local helpers ────────────────
 def build(values):
     dummy = ListNode()
     cur = dummy
