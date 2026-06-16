@@ -1,20 +1,12 @@
 class Solution:
     def processStr(self, s: str) -> str:
-        # Direct left-to-right simulation. The four ops map straight to list ops:
-        #   lowercase → append
-        #   '*'       → pop last char (only if buffer non-empty: the "if exists" rule)
-        #   '#'       → duplicate (append a copy of the buffer to itself)
-        #   '%'       → reverse in place
-        # A list (not a string) keeps append/pop/reverse cheap and mutable.
-        # With |s| ≤ 20 the result stays small even after a few '#' doublings.
         result = []
-
         for ch in s:
             if ch == '*':
                 if result:
                     result.pop()
             elif ch == '#':
-                result += result            # duplicate
+                result += result           
             elif ch == '%':
                 result.reverse()
             else:
@@ -23,7 +15,7 @@ class Solution:
         return "".join(result)
 
 
-# ── Quick tests ──────────────────────────────────────────────────────────────
+# ── Quick tests ────────────────────────
 if __name__ == "__main__":
     sol = Solution()
     print(repr(sol.processStr("a#b%*")))     # 'ba'
