@@ -354,7 +354,7 @@ Leetcode---Problem/
 ## 📬 Connect
 
 - **GitHub:** [romesh45](https://github.com/romesh45)
-- **LeetCode:** [romesh45](https://leetcode.com/romesh45)
+- **LeetCode:** [Romeshwar K](https://leetcode.com/u/user9694nN/)
 
 ---
 
