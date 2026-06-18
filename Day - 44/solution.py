@@ -1,14 +1,6 @@
 class Solution:
     def processStr(self, s: str, k: int) -> str:
-        # The "II" twist: |s| ≤ 10^5 and '#' DOUBLES the string, so the final
-        # length can reach 10^15 — far too large to build. We only need the
-        # character at index k, so:
-        #   1) Forward pass: record the length BEFORE each operation.
-        #   2) Backward pass: map k through each op in reverse until it lands on
-        #      the original appended letter.
-        CAP = 10**15 + 1          # defensive cap; valid lengths never exceed 10^15
-
-        # ── Forward: before[i] = length just before processing s[i] ──────────
+        CAP = 10**15 + 1          
         before = [0] * len(s)
         length = 0
         for i, ch in enumerate(s):
@@ -18,35 +10,26 @@ class Solution:
             elif ch == '#':
                 length = min(length * 2, CAP)
             elif ch == '%':
-                pass                       # reverse leaves length unchanged
+                pass                       
             else:
                 length += 1
-
-        # `length` is now the FINAL length. Out of bounds → '.'.
         if k >= length:
             return "."
-
-        # ── Backward: undo each op, transforming k into an earlier index ─────
         for i in range(len(s) - 1, -1, -1):
-            L = before[i]                  # length BEFORE this op
+            L = before[i]                  
             ch = s[i]
             if ch == '*':
-                # post-string is a prefix of the pre-string → k unchanged.
                 pass
             elif ch == '#':
-                # after = pre + pre; second copy maps back by -L.
                 if k >= L:
                     k -= L
             elif ch == '%':
-                # reverse: index k came from position L-1-k.
                 k = L - 1 - k
             else:
-                # letter append: new char occupies index L (last slot).
                 if k == L:
                     return ch
-                # else k < L → already an index into the pre-string, unchanged.
 
-        return "."                          # unreachable for valid k
+        return "."                          
 
 
 # ── Brute-force reference (Day-43 simulation) for cross-checking ─────────────
