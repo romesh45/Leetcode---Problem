@@ -1,19 +1,11 @@
-from typing import List
-
-
 class Solution:
     def largestAltitude(self, gain: List[int]) -> int:
-        # The altitude at each point is a running PREFIX SUM of `gain`, starting
-        # from 0 at point 0. We only need the maximum, so carry a running
-        # altitude and a running best — no need to store the full array.
         altitude = 0
-        highest = 0          # point 0 has altitude 0 and is always a candidate
-
+        highest = 0          
         for g in gain:
-            altitude += g    # advance to the next point
+            altitude += g   
             if altitude > highest:
                 highest = altitude
-
         return highest
 
 
