@@ -6,7 +6,7 @@
 
 ![Language](https://img.shields.io/badge/Language-Python%203-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Status](https://img.shields.io/badge/Status-Active-22c55e?style=for-the-badge)
-![Days](https://img.shields.io/badge/Days%20Completed-36-f59e0b?style=for-the-badge)
+![Days](https://img.shields.io/badge/Days%20Completed-47-f59e0b?style=for-the-badge)
 [![Profile](https://img.shields.io/badge/LeetCode-user9694nN-FFA116?style=for-the-badge&logo=leetcode&logoColor=white)](https://leetcode.com/u/user9694nN/)
 
 </div>
@@ -63,6 +63,17 @@ Each day's folder contains:
 | [Day 34](./Day%20-%2034) | [2196. Create Binary Tree From Descriptions](https://leetcode.com/problems/create-binary-tree-from-descriptions/) | ![Medium](https://img.shields.io/badge/-Medium-f59e0b) | Hash Table · Binary Tree · Tree Construction |
 | [Day 35](./Day%20-%2035) | [2161. Partition Array According to Given Pivot](https://leetcode.com/problems/partition-array-according-to-given-pivot/) | ![Medium](https://img.shields.io/badge/-Medium-f59e0b) | Stable Partition · Three-Way Split · Two Pointers |
 | [Day 36](./Day%20-%2036) | [3689. Maximum Total Subarray Value I](https://leetcode.com/problems/maximum-total-subarray-value-i/) | ![Medium](https://img.shields.io/badge/-Medium-f59e0b) | Math · Greedy · Observation |
+| [Day 37](./Day%20-%2037) | [3691. Maximum Total Subarray Value II](https://leetcode.com/problems/maximum-total-subarray-value-ii/) | ![Hard](https://img.shields.io/badge/-Hard-ef4444) | Heap · Sparse Table · K-Largest from Sorted Lists |
+| [Day 38](./Day%20-%2038) | [3558. Number of Ways to Assign Edge Weights I](https://leetcode.com/problems/number-of-ways-to-assign-edge-weights-i/) | ![Medium](https://img.shields.io/badge/-Medium-f59e0b) | Tree · BFS · Parity Counting |
+| [Day 39](./Day%20-%2039) | [3559. Number of Ways to Assign Edge Weights II](https://leetcode.com/problems/number-of-ways-to-assign-edge-weights-ii/) | ![Hard](https://img.shields.io/badge/-Hard-ef4444) | LCA · Binary Lifting · Parity Counting |
+| [Day 40](./Day%20-%2040) | [2130. Maximum Twin Sum of a Linked List](https://leetcode.com/problems/maximum-twin-sum-of-a-linked-list/) | ![Medium](https://img.shields.io/badge/-Medium-f59e0b) | Linked List · Fast & Slow · In-Place Reversal |
+| [Day 41](./Day%20-%2041) | [3838. Weighted Word Mapping](https://leetcode.com/problems/weighted-word-mapping/) | ![Easy](https://img.shields.io/badge/-Easy-00c4cc) | String · Math · Modular Arithmetic |
+| [Day 42](./Day%20-%2042) | [2095. Delete the Middle Node of a Linked List](https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/) | ![Medium](https://img.shields.io/badge/-Medium-f59e0b) | Linked List · Fast & Slow Pointers |
+| [Day 43](./Day%20-%2043) | [3612. Process String with Special Operations I](https://leetcode.com/problems/process-string-with-special-operations-i/) | ![Medium](https://img.shields.io/badge/-Medium-f59e0b) | String · Simulation · Stack |
+| [Day 44](./Day%20-%2044) | [3614. Process String with Special Operations II](https://leetcode.com/problems/process-string-with-special-operations-ii/) | ![Hard](https://img.shields.io/badge/-Hard-ef4444) | Reverse Index Mapping · Length Tracking |
+| [Day 45](./Day%20-%2045) | [1344. Angle Between Hands of a Clock](https://leetcode.com/problems/angle-between-hands-of-a-clock/) | ![Medium](https://img.shields.io/badge/-Medium-f59e0b) | Math · Geometry |
+| [Day 46](./Day%20-%2046) | [1732. Find the Highest Altitude](https://leetcode.com/problems/find-the-highest-altitude/) | ![Easy](https://img.shields.io/badge/-Easy-00c4cc) | Array · Prefix Sum · Running Maximum |
+| [Day 47](./Day%20-%2047) | [1840. Maximum Building Height](https://leetcode.com/problems/maximum-building-height/) | ![Hard](https://img.shields.io/badge/-Hard-ef4444) | Constraint Propagation · Anchor Compression · Math |
 
 ---
 
@@ -70,18 +81,18 @@ Each day's folder contains:
 
 | Metric | Count |
 |--------|------:|
-| Total Problems Solved | 36 |
-| Easy | 9 |
-| Medium | 20 |
-| Hard | 7 |
-| Current Streak | 36 days 🔥 |
+| Total Problems Solved | 47 |
+| Easy | 11 |
+| Medium | 25 |
+| Hard | 11 |
+| Current Streak | 47 days 🔥 |
 | Language | Python 3 |
 
 ---
 
 ## 🔍 Topics Covered
 
-`Linked List` · `Two Pointers` · `Matrix` · `Union-Find` · `Monotonic Stack` · `BFS` · `DFS` · `Number Theory` · `SPF Sieve` · `Graph Components` · `Graph Reachability` · `Dynamic Programming` · `DP on DAG` · `Digit DP` · `Memoized DFS` · `Simulation` · `Greedy` · `Exchange Argument` · `Decoupling` · `Hash Table` · `Hash Set` · `Hash Map` · `Math` · `Binary Search` · `Rotated Sorted Array` · `Difference Array` · `Prefix Sum` · `Prefix Difference` · `Range Updates` · `Bit Manipulation` · `Bitmask as Set` · `Trie` · `Suffix Trie` · `Bucket Clearing` · `Sliding Window` · `Segment Tree` · `Sorted Set` · `Digit Sum` · `Binary Tree` · `Tree Construction` · `Stable Partition` · `Three-Way Partition` · `Circular Scan` · `Sorted Arrays`
+`Linked List` · `Two Pointers` · `Fast & Slow Pointers` · `In-Place Reversal` · `Matrix` · `Union-Find` · `Monotonic Stack` · `BFS` · `DFS` · `Number Theory` · `SPF Sieve` · `Graph Components` · `Graph Reachability` · `Tree` · `LCA` · `Binary Lifting` · `Binary Tree` · `Tree Construction` · `Dynamic Programming` · `DP on DAG` · `Digit DP` · `Memoized DFS` · `Simulation` · `Greedy` · `Exchange Argument` · `Decoupling` · `Hash Table` · `Hash Set` · `Hash Map` · `Math` · `Geometry` · `Modular Arithmetic` · `Parity Counting` · `Binary Search` · `Rotated Sorted Array` · `Heap` · `Sparse Table` · `K-Largest from Sorted Lists` · `Difference Array` · `Prefix Sum` · `Prefix Difference` · `Range Updates` · `Bit Manipulation` · `Bitmask as Set` · `Trie` · `Suffix Trie` · `Bucket Clearing` · `Sliding Window` · `Segment Tree` · `Sorted Set` · `Digit Sum` · `Stable Partition` · `Three-Way Partition` · `Constraint Propagation` · `Reverse Index Mapping` · `Circular Scan` · `Sorted Arrays`
 
 ---
 
@@ -90,151 +101,57 @@ Each day's folder contains:
 ```
 Leetcode---Problem/
 │
-├── Day - 1/                # 61. Rotate List
-│   ├── solution.py         # Circular link & break — O(n) time, O(1) space
-│   └── README.md
+├── Day - 1/    # 61. Rotate List — circular link & break, O(n)/O(1)
+├── Day - 2/    # 1861. Rotating the Box — gravity + 90° rotation, O(m×n)
+├── Day - 3/    # 3660. Jump Game IX — component-max stack + Union-Find
+├── Day - 4/    # 3629. Min Jumps via Prime Teleportation — BFS + SPF sieve + bucket clearing
+├── Day - 5/    # 13. Roman to Integer — right-to-left compare, O(n)
+├── Day - 6/    # 1914. Cyclically Rotating a Grid — layer → 1D rotation, O(m×n)
+├── Day - 7/    # 2770. Max Number of Jumps to Reach Last Index — bottom-up DP, O(n²)
+├── Day - 8/    # 1665. Min Initial Energy to Finish Tasks — greedy sort by surplus
+├── Day - 9/    # 1674. Min Moves to Make Array Complementary — difference array, O(n+limit)
+├── Day - 10/   # 2784. Check if Array is Good — max-pinned n + sorted compare
+├── Day - 11/   # 153. Find Min in Rotated Sorted Array — binary search vs nums[right]
+├── Day - 12/   # 154. Find Min in Rotated Sorted Array II — tie-shrink for duplicates
+├── Day - 13/   # 1306. Jump Game III — BFS over ±arr[i], O(n)
+├── Day - 14/   # 1345. Jump Game IV — BFS + value-bucket clearing, O(n)
+├── Day - 15/   # 2540. Minimum Common Value — merge-style two-pointer, O(n+m)
+├── Day - 16/   # 2657. Prefix Common Array — bitmask seen-sets + popcount, O(n)
+├── Day - 17/   # 3043. Longest Common Prefix length — hash set of int prefixes via //10
+├── Day - 18/   # 33. Search in Rotated Sorted Array — sorted-half detection, O(log n)
+├── Day - 19/   # 1752. Check if Sorted and Rotated — circular drop counter, O(n)/O(1)
+├── Day - 20/   # 1340. Jump Game V — memoized DFS on DAG, break-on-block, O(n·d)
+├── Day - 21/   # 1871. Jump Game VII — BFS + sliding frontier pointer, O(n)
+├── Day - 22/   # 3120. Count Special Characters I — two presence sets, O(n)
+├── Day - 23/   # 3121. Count Special Characters II — last-lower vs first-upper maps, O(n)
+├── Day - 24/   # 3093. Longest Common Suffix Queries — reverse-trie w/ per-node best, O(C+Q)
+├── Day - 25/   # 3300. Min Element After Digit-Sum Replacement — streaming min, O(n)
+├── Day - 26/   # 3161. Block Placement Queries — max segment tree + sorted set, O(n log M)
+├── Day - 27/   # 2126. Destroying Asteroids — greedy sort ascending + sweep
+├── Day - 28/   # 2144. Min Cost of Buying Candies — sort desc, skip every 3rd
+├── Day - 29/   # 3633. Earliest Finish Time I — brute force pairs × both orders, O(n·m)
+├── Day - 30/   # 3635. Earliest Finish Time II — decoupled best-completion + sweep, O(n+m)
+├── Day - 31/   # 3751. Total Waviness I — brute-force digit peak/valley scan, O(R·D)
+├── Day - 32/   # 3753. Total Waviness II — digit DP + f(num2)−f(num1−1), O(D)
+├── Day - 33/   # 2574. Left and Right Sum Differences — total-minus-prefix, O(n)/O(1)
+├── Day - 34/   # 2196. Create Binary Tree From Descriptions — value→node map, root = non-child
+├── Day - 35/   # 2161. Partition Array by Pivot — stable 3-way bucket partition, O(n)
+├── Day - 36/   # 3689. Max Total Subarray Value I — k × (globalMax − globalMin), O(n)
+├── Day - 37/   # 3691. Max Total Subarray Value II — heap over sorted chains + sparse table
+├── Day - 38/   # 3558. Assign Edge Weights I — BFS depth + 2^(d−1), O(n)
+├── Day - 39/   # 3559. Assign Edge Weights II — binary-lifting LCA + 2^(d−1), O((n+q) log n)
+├── Day - 40/   # 2130. Maximum Twin Sum — fast/slow + in-place reversal, O(n)/O(1)
+├── Day - 41/   # 3838. Weighted Word Mapping — weight-sum → mod 26 → reverse map, O(n)
+├── Day - 42/   # 2095. Delete the Middle Node — fast/slow + prev splice, O(n)/O(1)
+├── Day - 43/   # 3612. Process String I — list-buffer simulation
+├── Day - 44/   # 3614. Process String II — length tracking + reverse index mapping, O(n)
+├── Day - 45/   # 1344. Angle Between Clock Hands — 0.5°/min hour creep, O(1)
+├── Day - 46/   # 1732. Find the Highest Altitude — running prefix-sum max, O(n)/O(1)
+├── Day - 47/   # 1840. Maximum Building Height — anchor compression + tent-peak, O(m log m)
 │
-├── Day - 2/                # 1861. Rotating the Box
-│   ├── solution.py         # Gravity simulation + 90° CW rotation — O(m×n)
-│   └── README.md
+│   (each folder contains solution.py + README.md)
 │
-├── Day - 3/                # 3660. Jump Game IX
-│   ├── solution.py         # Component-max stack + Union-Find — O(n·α(n))
-│   └── README.md
-│
-├── Day - 4/                # 3629. Minimum Jumps via Prime Teleportation
-│   ├── solution.py         # BFS + SPF Sieve + Bucket Clearing — O(n log V)
-│   └── README.md
-│
-├── Day - 5/                # 13. Roman to Integer
-│   ├── solution.py         # Hash Table + Math + String — O(n)
-│   └── README.md
-│
-├── Day - 6/                # 1914. Cyclically Rotating a Grid
-│   ├── solution.py         # Layer extraction + 1D rotation — O(m×n)
-│   └── README.md
-│
-├── Day - 7/                # 2770. Maximum Number of Jumps to Reach Last Index
-│   ├── solution.py         # Bottom-up DP — O(n²) time, O(n) space
-│   └── README.md
-│
-├── Day - 8/                # 1665. Minimum Initial Energy to Finish Tasks
-│   ├── solution.py         # Greedy sort by surplus + simulation — O(n log n)
-│   └── README.md
-│
-├── Day - 9/                # 1674. Minimum Moves to Make Array Complementary
-│   ├── solution.py         # Difference array over target sums — O(n + limit)
-│   └── README.md
-│
-├── Day - 10/               # 2784. Check if Array is Good
-│   ├── solution.py         # Max-pinned n + sorted comparison — O(n log n)
-│   └── README.md
-│
-├── Day - 11/               # 153. Find Minimum in Rotated Sorted Array
-│   ├── solution.py         # Binary search vs nums[right] — O(log n)
-│   └── README.md
-│
-├── Day - 12/               # 154. Find Minimum in Rotated Sorted Array II
-│   ├── solution.py         # Binary search + tie-shrink for duplicates — O(log n) avg / O(n) worst
-│   └── README.md
-│
-├── Day - 13/               # 1306. Jump Game III
-│   ├── solution.py         # BFS over ±arr[i] neighbours — O(n)
-│   └── README.md
-│
-├── Day - 14/               # 1345. Jump Game IV
-│   ├── solution.py         # BFS + value-bucket clearing — O(n)
-│   └── README.md
-│
-├── Day - 15/               # 2540. Minimum Common Value
-│   ├── solution.py         # Merge-style two-pointer scan — O(n + m)
-│   └── README.md
-│
-├── Day - 16/               # 2657. Prefix Common Array of Two Arrays
-│   ├── solution.py         # Bitmask seen-sets + popcount — O(n)
-│   └── README.md
-│
-├── Day - 17/               # 3043. Length of the Longest Common Prefix
-│   ├── solution.py         # Hash set of integer prefixes via // 10 — O((n+m)·D)
-│   └── README.md
-│
-├── Day - 18/               # 33. Search in Rotated Sorted Array
-│   ├── solution.py         # One-pass binary search via sorted-half detection — O(log n)
-│   └── README.md
-│
-├── Day - 19/               # 1752. Check if Array Is Sorted and Rotated
-│   ├── solution.py         # Circular drop counter — O(n) time, O(1) space
-│   └── README.md
-│
-├── Day - 20/               # 1340. Jump Game V
-│   ├── solution.py         # Memoized DFS on DAG with break-on-block — O(n·d)
-│   └── README.md
-│
-├── Day - 21/               # 1871. Jump Game VII
-│   ├── solution.py         # BFS + sliding frontier pointer — O(n)
-│   └── README.md
-│
-├── Day - 22/               # 3120. Count the Number of Special Characters I
-│   ├── solution.py         # Two presence sets (lower/upper) — O(n)
-│   └── README.md
-│
-├── Day - 23/               # 3121. Count the Number of Special Characters II
-│   ├── solution.py         # last-lower vs first-upper index maps — O(n)
-│   └── README.md
-│
-├── Day - 24/               # 3093. Longest Common Suffix Queries
-│   ├── solution.py         # Reverse-trie with per-node best index — O(C + Q)
-│   └── README.md
-│
-├── Day - 25/               # 3300. Minimum Element After Replacement With Digit Sum
-│   ├── solution.py         # Streaming min of digit sums — O(n)
-│   └── README.md
-│
-├── Day - 26/               # 3161. Block Placement Queries
-│   ├── solution.py         # Max segment tree + sorted obstacle set — O(n log M)
-│   └── README.md
-│
-├── Day - 27/               # 2126. Destroying Asteroids
-│   ├── solution.py         # Greedy sort ascending + sweep — O(n log n)
-│   └── README.md
-│
-├── Day - 28/               # 2144. Minimum Cost of Buying Candies With Discount
-│   ├── solution.py         # Sort descending, skip every 3rd — O(n log n)
-│   └── README.md
-│
-├── Day - 29/               # 3633. Earliest Finish Time for Land and Water Rides I
-│   ├── solution.py         # Brute force pairs × both orders — O(n·m)
-│   └── README.md
-│
-├── Day - 30/               # 3635. Earliest Finish Time for Land and Water Rides II
-│   ├── solution.py         # Decoupled best-completion + sweep — O(n + m)
-│   └── README.md
-│
-├── Day - 31/               # 3751. Total Waviness of Numbers in Range I
-│   ├── solution.py         # Brute-force digit peak/valley scan — O(R·D)
-│   └── README.md
-│
-├── Day - 32/               # 3753. Total Waviness of Numbers in Range II
-│   ├── solution.py         # Digit DP + f(num2) − f(num1−1) — O(D)
-│   └── README.md
-│
-├── Day - 33/               # 2574. Left and Right Sum Differences
-│   ├── solution.py         # Running prefix + total-minus-prefix — O(n), O(1) space
-│   └── README.md
-│
-├── Day - 34/               # 2196. Create Binary Tree From Descriptions
-│   ├── solution.py         # Value→node map + root via "not a child" — O(n)
-│   └── README.md
-│
-├── Day - 35/               # 2161. Partition Array According to Given Pivot
-│   ├── solution.py         # Stable 3-way bucket partition — O(n)
-│   └── README.md
-│
-├── Day - 36/               # 3689. Maximum Total Subarray Value I
-│   ├── solution.py         # k × (globalMax − globalMin) — O(n)
-│   └── README.md
-│
-└── README.md               ← you are here
+└── README.md   ← you are here
 ```
 
 ---
@@ -242,119 +159,151 @@ Leetcode---Problem/
 ## 🚀 Problem Highlights
 
 ### Day 1 — Rotate List
-**The trick:** Don't shift nodes one by one. Connect the tail to the head to make a circle, walk to the new tail at index `length − k − 1`, then break the circle. Two passes, no extra memory.
+**The trick:** Connect the tail to the head to form a circle, walk to the new tail at index `length − k − 1`, then break the circle. Two passes, no extra memory.
 
 ### Day 2 — Rotating the Box
-**The trick:** The 90° clockwise rotation maps "rightward" in the original to "downward" in the result. Apply gravity first (stones slide right per row using a two-pointer), then apply the standard rotation formula `result[j][m-1-i] = box[i][j]`. Each obstacle resets the gravity pointer independently.
+**The trick:** The 90° clockwise rotation maps "rightward" to "downward". Apply gravity first (stones slide right per row via two-pointer), then `result[j][m-1-i] = box[i][j]`. Each obstacle resets the gravity pointer.
 
 ### Day 3 — Jump Game IX
-**The non-obvious bug fix:** The standard PGE + NSE spanning tree fails for arrays like `[30, 21, 5, 35, 24]`. When components merge, a future small element must compare against the **component's max value**, not the individual element's value. Maintain a stack of `(component_root, component_max)` pairs — pop and union whenever `component_max > nums[i]`. Single pass, no second scan needed.
+**The bug fix:** When components merge, a future small element must compare against the **component's max**, not the individual value. Maintain a stack of `(root, component_max)` — pop and union whenever `component_max > nums[i]`.
 
 ### Day 4 — Minimum Jumps via Prime Teleportation
-**The trick:** Naive BFS is O(n²) — prime 2 alone could fan out to half the array. Fix: group all indices by their prime factors into `prime_buckets[p]` upfront. First time any index with `nums[i] = p` is dequeued, drain and **clear** its bucket. Future activations find it empty → zero re-work. Uses a smallest-prime-factor (SPF) sieve for O(log V) factorization per number.
+**The trick:** Group indices by prime factors into buckets upfront; on first activation of value `p`, drain and **clear** its bucket so future activations do zero re-work. SPF sieve for O(log V) factorization.
 
 ### Day 5 — Roman to Integer
-**The trick:** Iterating right-to-left turns the subtraction rule into a simple comparison. If the current numeral is smaller than the one to its right (e.g., `I` before `V`), subtract it; otherwise add it. No look-ahead needed — a clean single pass with a fixed 7-entry hash map keeps it at O(n) time and O(1) space.
+**The trick:** Iterate right-to-left; if the current numeral is smaller than the one to its right, subtract it, else add. Single pass, O(1) space.
 
 ### Day 6 — Cyclically Rotating a Grid
-**The trick:** A 2D ring rotation is just a 1D list rotation in disguise. Traverse each layer clockwise into a flat list, shift it left by `k % layer_size` positions (`elements[k:] + elements[:k]`), then write values back in the same traversal order. Each layer is fully independent — no other layer is affected.
+**The trick:** A 2D ring rotation is a 1D list rotation in disguise. Flatten each layer clockwise, shift by `k % layer_size`, write back. Layers are independent.
 
 ### Day 7 — Maximum Number of Jumps to Reach the Last Index
-**The trick:** Unlike most jump games that ask for the minimum, this one asks for the maximum — so we want as many small hops as possible. Greedy fails because an "easy" jump now can lead to a dead end. Bottom-up DP fills `dp[j] = max(dp[i] + 1)` for all valid predecessors `i`, where validity means `|nums[j] - nums[i]| ≤ target`. Mark unreachable indices as `-1` so they're never used as springboards.
+**The trick:** Asks for the **max** hops, so greedy fails. Bottom-up DP `dp[j] = max(dp[i] + 1)` over valid predecessors (`|nums[j] − nums[i]| ≤ target`); mark unreachable as `−1`.
 
 ### Day 8 — Minimum Initial Energy to Finish Tasks
-**The trick:** Sort tasks by **`minimum − actual`** descending — the "surplus" or wasted-energy buffer. Tasks with the largest surplus have the highest entry cost relative to their actual spend, so they must be done first while energy reserves are full. After sorting, simulate: top up only when forced. The sum of all top-ups is the minimum initial energy. A pairwise exchange argument proves the sort order is optimal.
+**The trick:** Sort by **`minimum − actual`** descending (the surplus). High-surplus tasks have the highest entry cost, so do them first. Sum of forced top-ups = answer; provable by exchange argument.
 
 ### Day 9 — Minimum Moves to Make Array Complementary
-**The trick:** Iterate over the target sum `T ∈ [2, 2·limit]` instead of over moves. For each pair `(a, b)`, the cost as a function of `T` has only **three zones** — 0 moves at `T = a + b`, 1 move on `[1 + min(a,b), limit + max(a,b)]`, and 2 moves elsewhere. Apply these as range updates on a **difference array**, then prefix-sum and find the minimum. Beats the naive O(n·limit) approach by a factor of n.
+**The trick:** Iterate over target sum `T ∈ [2, 2·limit]`. Each pair has 3 cost zones (0/1/2 moves) — apply as **difference-array** range updates, prefix-sum, take the min. Beats O(n·limit) by a factor of n.
 
 ### Day 10 — Check if Array is Good
-**The trick:** The candidate `n` is forced — it must equal `max(nums)`, because `base[n]` always has `n` as its largest element. Then two cheap checks suffice: `len(nums) == n + 1` (rejects the wrong-length cases instantly), and sorted `nums == [1, 2, …, n−1, n, n]` (verifies all values and counts in one shot).
+**The trick:** `n` is forced to `max(nums)`. Then two checks: `len(nums) == n + 1`, and sorted `nums == [1,2,…,n−1,n,n]`.
 
 ### Day 11 — Find Minimum in Rotated Sorted Array
-**The trick:** Compare `nums[mid]` to `nums[right]` (**not** `nums[left]`). If `nums[mid] > nums[right]`, the rotation pivot is strictly right of `mid` (`left = mid + 1`); otherwise the right half is sorted and the minimum is at `mid` or to its left (`right = mid`, **not** `mid − 1`, so `mid` stays a candidate). One rule, no special-case for the no-rotation input.
+**The trick:** Compare `nums[mid]` to `nums[right]` (not `nums[left]`). `>` → pivot right (`left = mid+1`); else right half sorted (`right = mid`, keeping `mid`). One rule, no no-rotation special case.
 
 ### Day 12 — Find Minimum in Rotated Sorted Array II
-**The trick:** Duplicates introduce a third case: `nums[mid] == nums[right]` is genuinely ambiguous — arrays like `[3,3,1,3]` and `[3,1,3,3,3]` give the same comparison with the minimum on opposite sides. **Fallback safely with `right -= 1`** — if `nums[right]` were the unique minimum, `nums[mid]` would equal it, so `mid` still holds an equivalent copy. Worst case degrades to O(n) on adversarial inputs like `[3,3,3,3,1,3,3]`.
+**The trick:** Duplicates add `nums[mid] == nums[right]` ambiguity. Fallback safely with `right -= 1` (mid still holds an equivalent copy). Worst case O(n) on `[3,3,3,3,1,3,3]`.
 
 ### Day 13 — Jump Game III
-**The trick:** Reframe as **graph reachability**: each index is a node with at most two outgoing edges (`i + arr[i]` and `i − arr[i]`). BFS with a `visited` array runs in O(n). Check `arr[i] == 0` on dequeue — that's the cleanest place, and it handles "started on a zero" without a special case.
+**The trick:** Graph reachability — each index has edges `i ± arr[i]`. BFS with `visited`, O(n); check `arr[i] == 0` on dequeue.
 
 ### Day 14 — Jump Game IV
-**The O(n²) trap:** Same-value teleports can connect any index to up to `n − 1` neighbours — `[7,7,7,…,7]` would be quadratic. **The fix:** group indices by value into buckets, and after the first time any index with value `v` is dequeued, **clear `buckets[v]`**. Every other index sharing that value has already been enqueued, so future visits would re-walk an irrelevant list. Each bucket is iterated at most once → total teleport work across the whole BFS is O(n).
+**The O(n²) trap:** Same-value teleports fan out to `n−1` neighbours. Fix: after the first dequeue of value `v`, **clear `buckets[v]`** — every same-value index is already enqueued. Each bucket iterated once → O(n).
 
 ### Day 15 — Minimum Common Value
-**The trick:** Both arrays are already sorted, so a **merge-style two-pointer scan** is the natural fit. Each step either finds the answer (`nums1[i] == nums2[j]` — guaranteed minimum because both pointers only ever moved forward through smaller values) or advances whichever pointer has the smaller value (it can't be common with anything further ahead in the larger array). O(n + m) time, O(1) space — strictly better than the hash-set approach.
+**The trick:** Both arrays sorted → merge-style two-pointer. First match is the minimum; advance the smaller pointer otherwise. O(n+m), O(1).
 
 ### Day 16 — Find the Prefix Common Array of Two Arrays
-**The trick:** A **bitmask is a set in one integer**. Track `seen_A` and `seen_B` as bitmasks where bit `v` flips on once value `v` is seen. The common values at index `i` are exactly the bits set in **both** — so `popcount(seen_A & seen_B)` gives `C[i]` in a single line. Permutations + `n ≤ 50` make this trivially efficient.
+**The trick:** A bitmask is a set in one integer. `popcount(seen_A & seen_B)` gives `C[i]` directly.
 
 ### Day 17 — Find the Length of the Longest Common Prefix
-**The trick:** Brute-forcing all `n·m` pairs is too slow. Instead, **decouple** the arrays: insert every prefix of every number in `arr1` into a hash set using repeated `// 10` (integer division by 10 strips the last digit, generating prefixes longest-to-shortest for free). Then for each number in `arr2`, walk its own prefixes longest-first — the first set hit is automatically the longest match, so `break` immediately. O((n + m) · D) with `D ≤ 9` digits — effectively linear.
+**The trick:** Decouple via a hash set of integer prefixes built with repeated `// 10` (strips the last digit). Query each `arr2` number longest-first, break on first hit. O((n+m)·D), D ≤ 9.
 
 ### Day 18 — Search in Rotated Sorted Array
-**The trick:** A rotated sorted array has exactly **one break point**, so for any `mid`, **at least one of `[left..mid]` or `[mid..right]` is fully sorted**. Use `nums[left] <= nums[mid]` to identify the sorted half (the `<=` also handles `left == mid` and the no-rotation case). Then an O(1) range check on the sorted half decides direction: if `target` falls in its known range, recurse there; otherwise recurse the other half. One-pass O(log n).
+**The trick:** Exactly one break point → at any `mid`, one half is fully sorted. `nums[left] <= nums[mid]` identifies it; an O(1) range check on the sorted half picks the direction. One-pass O(log n).
 
 ### Day 19 — Check if Array Is Sorted and Rotated
-**The trick:** A non-decreasing array rotated by any amount has **at most one "drop"** (a position where the next element is smaller) — the drop sits between the original max and the original min. Scan **circularly** using `(i + 1) % n`, which unifies the unrotated case (drop at the wrap) and the rotated case (drop internal) under one rule. Allow at most one drop → valid.
+**The trick:** At most one "drop" in a circular scan via `(i+1) % n`, which unifies the rotated and unrotated cases. Allow ≤ 1 drop.
 
 ### Day 20 — Jump Game V
-**The trick:** Every jump goes from a strictly higher value to a strictly lower one, so the implicit graph is a **DAG** — memoized DFS is safe. The killer micro-optimization is the **`break` on `arr[k] >= arr[i]`**: once any "in-between" index meets or exceeds `arr[i]`, it blocks both itself and every further index in that direction (it would violate the "lower-than-launch" rule for any longer jump). This reduces per-state work from O(d²) to O(d), giving an overall O(n·d). For deeper chains, a sort-by-height bottom-up variant avoids recursion entirely.
+**The trick:** Strictly-decreasing jumps ⇒ DAG ⇒ memoized DFS is safe. **`break` on `arr[k] >= arr[i]`** — a blocking index halts that whole direction, cutting per-state work O(d²) → O(d).
 
 ### Day 21 — Jump Game VII
-**The trick:** Reachability where each `'0'` index connects to every `'0'` in `[i + minJump, i + maxJump]`. Naive BFS rescans overlapping windows → O(n·maxJump) TLE. The fix is a **sliding frontier pointer**: since BFS dequeues indices in non-decreasing order, track the largest index ever scanned and start the next window at `max(i + minJump, farthest + 1)`. Every index is examined at most once → O(n).
+**The trick:** Reachability with windows `[i+minJump, i+maxJump]`. Naive BFS rescans overlaps → TLE. A **sliding frontier pointer** (BFS dequeues in non-decreasing order) keeps every index scanned at most once → O(n).
 
 ### Day 22 — Count the Number of Special Characters I
-**The trick:** We only need **presence**, not counts — a letter is "special" if it appears in both cases at least once. Two hash sets (`lower_seen`, `upper_seen`) and a 26-bounded final tally do the job: count letters `c` where `c ∈ lower_seen` and `c.upper() ∈ upper_seen`. O(n) time, O(1) space.
+**The trick:** Only presence matters — two sets (`lower_seen`, `upper_seen`), count `c` where `c ∈ lower` and `c.upper() ∈ upper`. O(n), O(1).
 
 ### Day 23 — Count the Number of Special Characters II
-**The trick:** The added "every lowercase before the first uppercase" rule collapses to comparing **two indices per letter**: `last_lower[c] < first_upper[c.upper()]`. Why those two extremes? The latest lowercase is the hardest to beat, and the earliest uppercase is the lowest bar to clear — if those pass, every actual pair does. Other index pairings (first/first, last/last) silently fail.
+**The trick:** The "all lowercase before first uppercase" rule collapses to `last_lower[c] < first_upper[c.upper()]` — the worst-case lowercase vs the lowest-bar uppercase.
 
 ### Day 24 — Longest Common Suffix Queries
-**The trick:** "Longest common suffix" = "longest common prefix of the reverses." Build a **trie over reversed container strings**, and at every node pre-store the **best** container index passing through it (shortest length, then earliest). A query just walks `reversed(query)` down as far as it goes and returns the `best` at the deepest node — the empty-suffix fallback drops out for free at the root. O(C + Q).
+**The trick:** Longest common suffix = longest common prefix of reverses. Build a **reverse-trie**; pre-store at every node the best container index (shortest, then earliest). Query walks `reversed(query)` and reads the deepest node's best. O(C+Q).
 
 ### Day 25 — Minimum Element After Replacement With Digit Sum
-**The trick:** The answer only needs the *minimum* of the digit-sum array, so stream each digit sum straight into `min()` — no intermediate array. Extract digits with `% 10` / `// 10` (faster than string conversion). O(n) time, O(1) space. The digit sum of `nums[i] ≤ 10⁴` is bounded by 36.
+**The trick:** Stream each digit sum (`% 10` / `// 10`) straight into `min()` — no array. O(n), O(1).
 
 ### Day 26 — Block Placement Queries
-**The trick:** Obstacles carve the line into gaps; a block of size `sz` fits in `[0, x]` iff a usable gap ≥ `sz` lies inside. Store each gap at its **right endpoint** in a **max segment tree** (prefix-max query auto-excludes gaps past `x`), and add the trailing partial gap `x − last`. Inserting an obstacle **splits** a gap into two point-updates — one of them *decreases*, which is exactly why a Fenwick max won't work and a segment tree is required. O(n log M).
+**The trick:** Obstacles carve gaps; store each gap at its **right endpoint** in a max segment tree (prefix-max auto-excludes gaps past `x`) plus a trailing partial `x − last`. Insertion splits a gap — one update *decreases*, so a Fenwick max won't do; a segment tree is required.
 
 ### Day 27 — Destroying Asteroids
-**The trick:** Mass only ever grows, so destroying the **smallest reachable asteroid first** is optimal — sort ascending and sweep, absorbing as you go. Failure is genuine because every order absorbs the same cumulative mass: at the first asteroid you can't beat, you already hold the maximum possible mass. Provable via an exchange argument. (Mind 64-bit overflow outside Python — mass reaches ~10¹⁰.)
+**The trick:** Mass only grows, so destroy the smallest reachable asteroid first — sort ascending and sweep. All orders absorb the same total, so the first unbeatable asteroid is a genuine fail. (Use 64-bit outside Python.)
 
 ### Day 28 — Minimum Cost of Buying Candies With Discount
-**The trick:** The free candy in any triple is the cheapest of the three (`≤ min(bought)`). To save the most, make freebies as *expensive* as legally allowed: **sort descending** and skip every index `≡ 2 (mod 3)`. Sorting ascending would be both costlier *and* illegal (freeing a large candy violates the `≤ min` rule).
+**The trick:** The free candy is the cheapest of its triple. Maximize freebie value: **sort descending** and skip every index `≡ 2 (mod 3)`. Ascending would be both costlier and illegal.
 
 ### Day 29 — Earliest Finish Time for Land and Water Rides I
-**The trick:** For a fixed (land, water) pair, each order's finish is `max(firstFinish, secondOpen) + secondDuration` — the `max` models waiting for the second ride to open. With `n, m ≤ 100`, brute-force all pairs × both orders in O(n·m). Both orders must be tried because waiting is asymmetric.
+**The trick:** Per pair, each order's finish is `max(firstFinish, secondOpen) + secondDur` (the `max` models waiting). With `n,m ≤ 100`, brute-force all pairs × both orders.
 
 ### Day 30 — Earliest Finish Time for Land and Water Rides II
-**The trick:** Same problem, but `n, m ≤ 5·10⁴` kills the O(n·m) brute force. The two orders **decouple**: since `max(landFinish, waterOpen) + waterDur` is monotonic in `landFinish`, the best land ride (earliest completion) is optimal against *every* water ride. Precompute each category's best completion time, sweep the other once → O(n + m).
+**The trick:** Larger input kills O(n·m). The two orders **decouple**: `max(landFinish, waterOpen) + waterDur` is monotone in `landFinish`, so the earliest-finishing land ride is best against *every* water ride. Precompute each category's best, sweep once → O(n+m).
 
 ### Day 31 — Total Waviness of Numbers in Range I
-**The trick:** With `num2 ≤ 10⁵`, just brute-force every number and count interior digits that are strict peaks/valleys (loop indices `1 .. len-2`). Strictness matters — `122` and `100` score 0 because of tied neighbours. Numbers with `< 3` digits fall out for free (empty interior loop). O(R·D).
+**The trick:** `num2 ≤ 10⁵` → brute-force every number, count strict interior peaks/valleys. Strictness drops `122`, `100`. O(R·D).
 
 ### Day 32 — Total Waviness of Numbers in Range II
-**The trick:** `num2 ≤ 10¹⁵` forces **digit DP** with `f(num2) − f(num1 − 1)`. Carry the previous two digits so placing a new digit completes a triple and reveals whether the middle is a peak/valley. The crux is the **distribution line `wav += w + add * c`** — a peak discovered high in the tree adds +1 to *every* number flowing through that branch. Returning `(count, sum)` together is what makes summing-over-a-range work.
+**The trick:** `num2 ≤ 10¹⁵` → **digit DP** with `f(num2) − f(num1 − 1)`. Carry the previous two digits; the distribution line `wav += w + add * c` spreads a peak's +1 across every number in the branch.
 
 ### Day 33 — Left and Right Sum Differences
-**The trick:** No need to build both prefix and suffix arrays. The array partitions into `left + nums[i] + right = total`, so `right = total − left − nums[i]` falls out arithmetically. Carry a running `left` and derive `right` each step. O(n) time, **O(1) extra space**.
+**The trick:** `right = total − left − nums[i]` falls out of the partition `left + nums[i] + right = total`. Carry a running `left`. O(n), O(1).
 
 ### Day 34 — Create Binary Tree From Descriptions
-**The trick:** Index nodes by their unique value in a `dict`, creating each node lazily via a `get()` helper so the same physical node is reused wherever it appears. The root is the one value **never seen as a child**. ⚠️ Gotcha: don't redefine `TreeNode` on LeetCode — it shadows the judge's class and the serializer rejects your return with a `TypeError`.
+**The trick:** Index nodes by value, create lazily via `get()`; the root is the value **never seen as a child**. ⚠️ Don't redefine `TreeNode` — it shadows the judge's class.
 
 ### Day 35 — Partition Array According to Given Pivot
-**The trick:** It's a **stable** three-way partition — relative order within the "less" and "greater" groups must survive, which rules out the swap-based Dutch National Flag. Bucket elements into `less` and `greater` in scan order (preserving order for free), count the pivots, then stitch `less + [pivot]*count + greater`. O(n).
+**The trick:** A **stable** 3-way partition — swap-based Dutch National Flag breaks order. Bucket `less`/`greater` in scan order, count pivots, stitch `less + [pivot]*c + greater`. O(n).
 
 ### Day 36 — Maximum Total Subarray Value I
-**The trick:** For any subarray, `max(sub) ≤ globalMax` and `min(sub) ≥ globalMin`, so its value `≤ globalMax − globalMin` — and the whole array hits that bound exactly. Since repeats are allowed, just pick the whole array `k` times: the answer collapses to **`k × (globalMax − globalMin)`**. (Watch 64-bit overflow — up to ~10¹⁴.)
+**The trick:** Any subarray's value ≤ `globalMax − globalMin`, attained by the whole array. Repeats allowed → answer is `k × (globalMax − globalMin)`.
+
+### Day 37 — Maximum Total Subarray Value II
+**The trick:** "Distinct" forbids repeats → need the k largest values among ~10⁹ subarrays. For fixed `l`, `value(l, r)` is monotone in `r`, giving `n` sorted chains. **K-largest-from-sorted-lists** heap + sparse tables for O(1) range max/min → O((n+k) log n).
+
+### Day 38 — Number of Ways to Assign Edge Weights I
+**The trick:** Only the path length `d` matters. Weight 1 flips parity, weight 2 doesn't, so odd cost ⇔ odd count of 1s = **`2^(d−1)`** (first-edge flip bijection). BFS for `d`.
+
+### Day 39 — Number of Ways to Assign Edge Weights II
+**The trick:** Same `2^(d−1)` count, but per-query path lengths via `d = depth[u] + depth[v] − 2·depth[LCA]`. **Binary-lifting LCA** → O(log n) per query.
+
+### Day 40 — Maximum Twin Sum of a Linked List
+**The trick:** Twins mirror across the middle. Find the middle (fast/slow), **reverse the second half**, then sum the two halves in lockstep. O(n)/O(1).
+
+### Day 41 — Weighted Word Mapping
+**The trick:** Sum letter weights → `% 26` → reverse-alphabet map via **`chr(122 − r)`** (`'z' − r`), no lookup table. O(Σ lengths).
+
+### Day 42 — Delete the Middle Node of a Linked List
+**The trick:** Fast/slow finds the `⌊n/2⌋` node in one pass; a trailing `prev` splices it out. Guard the single-node case. O(n)/O(1).
+
+### Day 43 — Process String with Special Operations I
+**The trick:** Pure simulation on a list buffer — append / `pop` (guarded) / `result += result` / `reverse()`. `|s| ≤ 20` keeps doublings tiny.
+
+### Day 44 — Process String with Special Operations II
+**The trick:** `#` doubling blows the length to 10¹⁵ — unbuildable. Track **lengths forward**, then **walk the queried index `k` backward** through each op (letter / `*` / `#`: `k −= L` / `%`: `k = L−1−k`) until it hits the source letter. O(n).
+
+### Day 45 — Angle Between Hands of a Clock
+**The trick:** Minute hand `6°/min`; hour hand `30°/hr + 0.5°/min` (the **minute creep** is the whole catch — 3:30 → 105°, not 90°). `hour % 12`, then `min(diff, 360 − diff)`.
+
+### Day 46 — Find the Highest Altitude
+**The trick:** Altitudes are a prefix sum of `gain`; the answer is the max prefix sum with `0` (the start) seeded as a candidate. O(n)/O(1).
+
+### Day 47 — Maximum Building Height
+**The trick:** `n ≤ 10⁹` → work with O(m) **anchors** (restrictions + `[1,0]` + `[n,n−1]`). Propagate the ±1 rule **forward and backward** to get each anchor's true max, then the tent **peak** between adjacent anchors is `⌊(lh + rh + dist) / 2⌋`. Complexity is `n`-independent.
 
 ---
 
 ## 📬 Connect
 
-- **GitHub:** [romesh45](https://github.com/romesh45)
-- **LeetCode:** [Romeshwar K](https://leetcode.com/u/user9694nN/)
+- **LeetCode:** [user9694nN](https://leetcode.com/u/user9694nN/)
 
 ---
 
