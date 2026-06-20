@@ -1,42 +1,21 @@
-from typing import List
-
-
 class Solution:
     def maxBuilding(self, n: int, restrictions: List[List[int]]) -> int:
-        # n can be up to 10^9, so we CANNOT touch every building. We only work
-        # with the O(m) "anchor" points (the restrictions, plus building 1 fixed
-        # at height 0, plus building n with its natural ceiling).
-        #
-        # Idea: between two anchors the heights form a tent — rising at most +1
-        # per step from each side. After tightening each anchor's cap by what
-        # its neighbours allow, the tallest building in each gap is closed-form.
-
         r = [list(x) for x in restrictions]
         r.append([1, 0])                       # building 1 is fixed at height 0
         if all(x[0] != n for x in r):
             r.append([n, n - 1])               # unrestricted n → natural max n-1
         r.sort()
         m = len(r)
-
-        # Forward pass: from a height h at position p, a building d steps to the
-        # right can be at most h + d. Tighten each cap by the left neighbour.
         for i in range(1, m):
             r[i][1] = min(r[i][1], r[i - 1][1] + (r[i][0] - r[i - 1][0]))
-
-        # Backward pass: symmetric tightening from the right neighbour.
         for i in range(m - 2, -1, -1):
             r[i][1] = min(r[i][1], r[i + 1][1] + (r[i + 1][0] - r[i][0]))
-
-        # Peak between each adjacent anchor pair.
         ans = 0
         for i in range(1, m):
             lid, lh = r[i - 1]
             rid, rh = r[i]
-            # height(pos) ≤ min(lh + (pos-lid), rh + (rid-pos)); the two rising
-            # lines meet at height (lh + rh + (rid - lid)) / 2 — floor for ints.
             peak = (lh + rh + (rid - lid)) // 2
             ans = max(ans, peak)
-
         return ans
 
 
