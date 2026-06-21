@@ -1,28 +1,18 @@
-from typing import List
-
-
 class Solution:
     def maxIceCream(self, costs: List[int], coins: int) -> int:
-        # Greedy: buy the CHEAPEST bars first to maximize the COUNT.
-        # The problem mandates COUNTING SORT — a natural fit since costs[i] is
-        # bounded by 10^5, so we tally counts and sweep prices ascending instead
-        # of doing an O(n log n) comparison sort.
         MAX_COST = max(costs)
         count = [0] * (MAX_COST + 1)
         for c in costs:
-            count[c] += 1                       # bars priced exactly c
-
+            count[c] += 1                      
         bars = 0
-        for price in range(1, MAX_COST + 1):    # ascending = cheapest first
+        for price in range(1, MAX_COST + 1):    
             if count[price] == 0:
                 continue
             if coins < price:
-                break                           # can't afford this price → nor any higher
-            # Buy as many at this price as coins allow, capped by availability.
+                break                          
             buyable = min(count[price], coins // price)
             bars += buyable
             coins -= buyable * price
-
         return bars
 
 
