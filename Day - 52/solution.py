@@ -1,43 +1,15 @@
-from typing import List
-
-
 class Solution:
     def countSubarrays(self, nums: List[int], target: int) -> int:
-        # Reduce to a prefix-sum problem.
-        #
-        # "target is majority in nums[i..j]"
-        #   ⟺ count(target) > (j - i + 1) / 2
-        #   ⟺ count(target) > count(non-target)
-        #   ⟺ count(target) - count(non-target) > 0
-        #
-        # Map each element: +1 if == target, -1 otherwise.
-        # Let prefix[k] = sum of mapped[0..k-1].
-        #
-        # Then for subarray nums[i..j]:
-        #   mapped sum = prefix[j+1] - prefix[i]
-        #
-        # Target is majority  ⟺  prefix[j+1] - prefix[i] > 0
-        #                     ⟺  prefix[j+1] > prefix[i]
-        #
-        # For every right endpoint j, count left endpoints i ∈ [0, j]
-        # with prefix[i] < prefix[j+1].
-        #
-        # n ≤ 1000 → O(n²) is fine.
-
         n = len(nums)
-
-        # Build prefix sums of the ±1 mapped array.
         prefix = [0] * (n + 1)
         for i in range(n):
             prefix[i + 1] = prefix[i] + (1 if nums[i] == target else -1)
-
         count = 0
-        for j in range(n):              # right endpoint (inclusive)
+        for j in range(n):              
             pj = prefix[j + 1]
-            for i in range(j + 1):     # left endpoint
+            for i in range(j + 1):     
                 if pj > prefix[i]:
                     count += 1
-
         return count
 
 
