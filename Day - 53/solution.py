@@ -1,57 +1,18 @@
-from typing import List
-
-
 class Solution:
     def countSubarrays(self, nums: List[int], target: int) -> int:
-        # ── Same reduction as Part I ─────────────────────────────────────────
-        # Map each element to +1 (== target) or -1 (≠ target).
-        # target is majority in nums[i..j]
-        #   ⟺  sum of mapped[i..j] > 0
-        #   ⟺  prefix[j+1] - prefix[i] > 0
-        #   ⟺  prefix[j+1] > prefix[i]
-        #
-        # So the answer = number of index pairs (i, k) with i < k
-        #                 and prefix[i] < prefix[k].
-        #
-        # ── Why O(n²) no longer works ───────────────────────────────────────
-        # n ≤ 10⁵  →  n² = 10¹⁰  operations. Too slow.
-        #
-        # ── O(n log n) via BIT (Fenwick Tree) ───────────────────────────────
-        # Process prefix values left to right (k = 0, 1, …, n).
-        # Before inserting prefix[k], query: "how many already-inserted
-        # prefix values are strictly less than prefix[k]?"
-        # That count equals the number of valid left endpoints i for
-        # right endpoint j = k - 1.
-        #
-        # A Fenwick tree over coordinate-compressed prefix values
-        # answers each "count of values < x" in O(log n), giving
-        # O(n log n) overall.
-        #
-        # Coordinate compression:
-        #   prefix values lie in [-n, n]  (at most 2n+1 distinct values)
-        #   Compress to 1-indexed ranks so the BIT stays size O(n).
-
         n = len(nums)
-
-        # ── Build prefix sum array ───────────────────────────────────────────
         prefix = [0] * (n + 1)
         for i in range(n):
             prefix[i + 1] = prefix[i] + (1 if nums[i] == target else -1)
-
-        # ── Coordinate compression ───────────────────────────────────────────
         sorted_vals = sorted(set(prefix))
-        rank = {v: i + 1 for i, v in enumerate(sorted_vals)}   # 1-indexed
+        rank = {v: i + 1 for i, v in enumerate(sorted_vals)}   
         m = len(sorted_vals)
-
-        # ── Fenwick Tree (point update, prefix sum query) ────────────────────
         bit = [0] * (m + 1)
-
         def update(i: int) -> None:
             """Increment position i by 1."""
             while i <= m:
                 bit[i] += 1
                 i += i & (-i)
-
         def query(i: int) -> int:
             """Sum of positions 1..i (i.e., count of values with rank ≤ i)."""
             s = 0
@@ -59,17 +20,12 @@ class Solution:
                 s += bit[i]
                 i -= i & (-i)
             return s
-
-        # ── Sweep ────────────────────────────────────────────────────────────
         count = 0
         for k in range(n + 1):
             r = rank[prefix[k]]
             if k > 0:
-                # Count already-seen prefix values strictly less than prefix[k]
-                # = count of ranks in [1, r-1]
                 count += query(r - 1)
-            update(r)   # insert prefix[k] into BIT
-
+            update(r)   
         return count
 
 
