@@ -1,70 +1,22 @@
-from typing import List
-from collections import Counter
-
-
 class Solution:
     def maximumLength(self, nums: List[int]) -> int:
-        # The pattern [x, x², x⁴, ..., xᵏ, ..., x⁴, x², x] is a palindrome
-        # whose sorted form is:
-        #
-        #   [x, x, x², x², x⁴, x⁴, ..., xᵏ]
-        #   └──┘ └───┘ └────┘       └──┘
-        #    pair  pair   pair     single middle (largest)
-        #
-        # So: every value except the middle appears EXACTLY twice,
-        # and each value squared equals the next value in the chain.
-        #
-        # Strategy: for each unique starting value x, greedily extend the
-        # chain  x → x² → x⁴ → …  as long as each value appears ≥ 2 times
-        # in nums.  The first value that appears ≥ 1 time (but possibly < 2)
-        # becomes the middle (singleton), adding 1 to the count.
-        #
-        # Chain length → subset size:
-        #   depth pairs found → 2*depth elements from pairs
-        #   +1 for the middle  →  2*depth + 1 total
-        #   If no middle available, use the deepest pair as middle instead:
-        #   2*(depth-1) + 1 = 2*depth - 1
-        #
-        # Special case x = 1:
-        #   1² = 1, so the chain never grows; the whole pattern is [1,1,…,1].
-        #   Any odd-length run of 1s is valid.  Pick the largest odd count ≤ cnt[1].
-        #
-        # Time: O(n + U · log_max) where U = unique values and log_max ≤ 30
-        # (because squaring doubles the exponent, so the chain length for any
-        # starting value x ≥ 2 is at most log₂(log₂(10⁹)) ≈ 5).
-
         cnt = Counter(nums)
-        ans = 1  # single element always valid
-
+        ans = 1  
         for x in cnt:
-
-            # ── Special case: x = 1 ─────────────────────────────────────────
             if x == 1:
                 c = cnt[1]
-                # Largest odd number ≤ c
                 ans = max(ans, c if c % 2 == 1 else c - 1)
                 continue
-
-            # ── General case: x ≥ 2 ─────────────────────────────────────────
-            # Walk the chain x, x², x⁴, …
-            # Extend as long as the current value appears ≥ 2 times (can be a pair).
             depth = 0
             v = x
             while cnt.get(v, 0) >= 2:
                 depth += 1
-                v = v * v   # Python ints don't overflow; huge v just won't be in cnt
-
-            # v is now the candidate for the middle singleton.
+                v = v * v
             if cnt.get(v, 0) >= 1:
-                # v itself can serve as the middle.
                 candidate = 2 * depth + 1
             else:
-                # v unavailable; reuse the last pair's value as the middle
-                # (needs only 1 occurrence, and we had ≥ 2, so it's fine).
                 candidate = max(1, 2 * depth - 1)
-
             ans = max(ans, candidate)
-
         return ans
 
 
