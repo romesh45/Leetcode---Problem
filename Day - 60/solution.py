@@ -1,7 +1,3 @@
-from typing import List
-from collections import deque
-
-
 class Solution:
     def findMaxPathScore(self, edges: List[List[int]], online: List[bool], k: int) -> int:
         INF = float('inf')
