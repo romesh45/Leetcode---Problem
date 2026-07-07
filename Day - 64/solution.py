@@ -11,7 +11,7 @@ class Solution:
         return x * total
 
 
-# ── Quick tests ───────────────────────────────────────────────────────────────
+# ── Quick tests ──────────────────────────────────────────
 if __name__ == "__main__":
     sol = Solution()
 
