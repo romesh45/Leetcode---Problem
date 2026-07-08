@@ -1,11 +1,7 @@
-from typing import List
-
-
 class Solution:
     def concatenateAndMultiply(self, s: str, queries: List[List[int]]) -> List[int]:
         MOD = 10**9 + 7
         m = len(s)
-
         # ── Prefix arrays (1-based: index i covers s[0..i-1]) ─────────────────
         # nz[i]  = count  of non-zero digits in s[0..i-1]
         # px[i]  = value  of x for s[0..i-1] (mod MOD)
@@ -13,7 +9,6 @@ class Solution:
         nz = [0] * (m + 1)
         px = [0] * (m + 1)
         ps = [0] * (m + 1)
-
         for i, ch in enumerate(s):
             d = int(ch)
             nz[i+1] = nz[i]
@@ -23,12 +18,10 @@ class Solution:
                 nz[i+1]  = nz[i] + 1
                 px[i+1]  = (px[i] * 10 + d) % MOD
                 ps[i+1]  = ps[i] + d
-
         # Powers of 10 mod MOD (exponent up to m = 10^5)
         pow10 = [1] * (m + 1)
         for i in range(1, m + 1):
             pow10[i] = pow10[i-1] * 10 % MOD
-
         # ── Answer each query in O(1) ─────────────────────────────────────────
         #
         # Key formula:  px[r+1]  =  px[l] * 10^cnt  +  x   (mathematically)
@@ -43,7 +36,6 @@ class Solution:
             x   = (px[r+1] - px[l] * pow10[cnt]) % MOD
             tot = ps[r+1] - ps[l]
             result.append(x * tot % MOD)
-
         return result
 
 
