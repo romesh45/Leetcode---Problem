@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🧠 LeetCode Daily Mission
+# 🧠 LeetCode Daily Missio
 
 ### A disciplined log of daily problem solving — one question, every day, no skip and work
 
