@@ -1,8 +1,3 @@
-from math import gcd
-from typing import List
-from collections import defaultdict
-
-
 class Solution:
     def subsequencePairCount(self, nums: List[int]) -> int:
         MOD = 10**9 + 7
