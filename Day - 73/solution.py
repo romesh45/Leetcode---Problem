@@ -1,7 +1,3 @@
-from math import gcd
-from typing import List
-
-
 class Solution:
     def sumOfGcdPairs(self, nums: List[int]) -> int:
         # Step 1: build prefixGcd[i] = gcd(nums[i], max(nums[0..i]))
