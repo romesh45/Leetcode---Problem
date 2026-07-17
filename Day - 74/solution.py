@@ -1,7 +1,3 @@
-from typing import List
-from bisect import bisect_right
-
-
 class Solution:
     def gcdValues(self, nums: List[int], queries: List[int]) -> List[int]:
         MAX_VAL = max(nums) + 1
