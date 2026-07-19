@@ -3,7 +3,7 @@ class Solution:
         # Greedy monotonic-stack approach:
         # For each character c, pop larger characters off the top of the stack
         # only if they appear again later (so we won't lose them permanently).
-        # Skip c if it's already in the stack (we already have the best position for it).
+        # Skip c if it's already in the stack (we already have the best position for it)
 
         last = {c: i for i, c in enumerate(s)}  # last index each char appears
         stack = []
