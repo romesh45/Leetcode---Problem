@@ -1,6 +1,3 @@
-from typing import List
-
-
 class Solution:
     def uniqueXorTriplets(self, nums: List[int]) -> int:
         n = len(nums)
