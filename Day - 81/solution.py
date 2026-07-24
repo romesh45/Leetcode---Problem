@@ -1,6 +1,3 @@
-from typing import List
-
-
 class Solution:
     def uniqueXorTriplets(self, nums: List[int]) -> int:
         # Unlike Part I, nums is NOT a permutation -- any integers 1..1500.
