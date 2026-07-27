@@ -1,4 +1,4 @@
-# Day 78 -- LeetCode Challenge
+# Day 84 -- LeetCode Challenge
 
 ## 1464. Maximum Product of Two Elements in an Array
 
