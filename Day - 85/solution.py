@@ -1,6 +1,3 @@
-from collections import Counter
-
-
 class Solution:
     def smallestPalindrome(self, s: str) -> str:
         freq = Counter(s)
