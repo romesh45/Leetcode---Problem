@@ -1,4 +1,4 @@
-# Day 73 -- LeetCode Challenge
+# Day 78 -- LeetCode Challenge
 
 ## 3499. Maximize Active Section with Trade I
 
