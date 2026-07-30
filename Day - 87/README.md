@@ -1,4 +1,4 @@
-# Day 81 -- LeetCode Challenge
+# Day 87 -- LeetCode Challenge
 
 ## 3014. Minimum Number of Pushes to Type Word I
 
