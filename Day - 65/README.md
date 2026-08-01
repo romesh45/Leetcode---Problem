@@ -1,4 +1,4 @@
-# Day 60 — LeetCode Challenge
+# Day 65 — LeetCode Challenge
 
 ## 3756. Concatenate Non-Zero Digits and Multiply by Sum II
 
