@@ -1,4 +1,4 @@
-# Day 55 — LeetCode Challenge
+# Day 56 — LeetCode Challenge
 
 ## 1967. Number of Strings That Appear as Substrings in Word
 
