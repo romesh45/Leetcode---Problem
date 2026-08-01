@@ -1,4 +1,4 @@
-# Day 52 — LeetCode Challenge
+# Day 53 — LeetCode Challenge
 
 ## 3739. Count Subarrays With Majority Element II
 
