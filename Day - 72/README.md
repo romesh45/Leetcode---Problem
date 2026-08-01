@@ -1,4 +1,4 @@
-# Day 67 — LeetCode Challenge
+# Day 72 — LeetCode Challenge
 
 ## 3658. GCD of Odd and Even Sums
 
