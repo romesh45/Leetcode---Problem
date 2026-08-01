@@ -1,4 +1,4 @@
-# Day 56 — LeetCode Challenge
+# Day 57 — LeetCode Challenge
 
 ## 1358. Number of Substrings Containing All Three Characters
 
