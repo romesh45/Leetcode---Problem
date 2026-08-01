@@ -1,4 +1,4 @@
-# Day 59 — LeetCode Challenge
+# Day 62 — LeetCode Challenge
 
 ## 1301. Number of Paths with Max Score
 
