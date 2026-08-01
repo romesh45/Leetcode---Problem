@@ -1,4 +1,4 @@
-# Day 68 — LeetCode Challenge
+# Day 73 — LeetCode Challenge
 
 ## 3867. Sum of GCD of Formed Pairs
 
