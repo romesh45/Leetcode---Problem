@@ -1,4 +1,4 @@
-# Day 64 — LeetCode Challenge
+# Day 69 — LeetCode Challenge
 
 ## 1331. Rank Transform of an Array
 
