@@ -1,4 +1,4 @@
-# Day 57 — LeetCode Challenge
+# Day 59 — LeetCode Challenge
 
 ## 3286. Find a Safe Walk Through a Grid
 
