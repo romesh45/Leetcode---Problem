@@ -1,4 +1,4 @@
-# Day 66 — LeetCode Challenge
+# Day 71 — LeetCode Challenge
 
 ## 3336. Find the Number of Subsequences With Equal GCD
 
