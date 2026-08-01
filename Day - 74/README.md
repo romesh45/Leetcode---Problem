@@ -1,4 +1,4 @@
-# Day 69 -- LeetCode Challenge
+# Day 74 -- LeetCode Challenge
 
 ## 3312. Sorted GCD Pair Queries
 
