@@ -1,4 +1,4 @@
-# Day 54 — LeetCode Challenge
+# Day 55 — LeetCode Challenge
 
 ## 1846. Maximum Element After Decreasing and Rearranging
 
