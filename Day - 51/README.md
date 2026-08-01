@@ -1,4 +1,4 @@
-# Day 50 — LeetCode Challenge
+# Day 51 — LeetCode Challenge
 
 ## 3700. Number of ZigZag Arrays II
 
