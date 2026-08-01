@@ -1,4 +1,4 @@
-# Day 57 — LeetCode Challenge
+# Day 60 — LeetCode Challenge
 
 ## 3620. Network Recovery Pathways
 
