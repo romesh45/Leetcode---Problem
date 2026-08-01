@@ -1,4 +1,4 @@
-# Day 59 — LeetCode Challenge
+# Day 64 — LeetCode Challenge
 
 ## 3754. Concatenate Non-Zero Digits and Multiply by Sum I
 
