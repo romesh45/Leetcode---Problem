@@ -1,4 +1,4 @@
-# Day 61 — LeetCode Challenge
+# Day 66 — LeetCode Challenge
 
 ## 3532. Path Existence Queries in a Graph I
 
