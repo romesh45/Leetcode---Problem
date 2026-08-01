@@ -1,4 +1,4 @@
-# Day 70 -- LeetCode Challenge
+# Day 75 -- LeetCode Challenge
 
 ## 1979. Find Greatest Common Divisor of Array
 
