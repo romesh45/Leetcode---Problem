@@ -1,4 +1,4 @@
-# Day 51 — LeetCode Challenge
+# Day 52 — LeetCode Challenge
 
 ## 3737. Count Subarrays With Majority Element I
 
