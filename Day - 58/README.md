@@ -1,4 +1,4 @@
-# Day 56 — LeetCode Challenge
+# Day 58 — LeetCode Challenge
 
 ## 2812. Find the Safest Path in a Grid
 
