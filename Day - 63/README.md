@@ -1,4 +1,4 @@
-# Day 60 — LeetCode Challenge
+# Day 63 — LeetCode Challenge
 
 ## 1288. Remove Covered Intervals
 
