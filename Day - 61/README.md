@@ -1,4 +1,4 @@
-# Day 58 — LeetCode Challenge
+# Day 61 — LeetCode Challenge
 
 ## 2492. Minimum Score of a Path Between Two Cities
 
