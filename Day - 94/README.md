@@ -1,4 +1,4 @@
-# Day 88 -- LeetCode Challenge
+# Day 94 -- LeetCode Challenge
 
 ## 3345. Smallest Divisible Digit Product I
 
