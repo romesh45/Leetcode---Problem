@@ -1,4 +1,4 @@
-# Day 87 -- LeetCode Challenge
+# Day 96 -- LeetCode Challenge
 
 ## 3302. Find the Lexicographically Smallest Valid Sequence
 
