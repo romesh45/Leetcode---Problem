@@ -1,5 +1,5 @@
 <div align="center">
-
+  
 # 🧠 LeetCode Daily Mission
 
 ### A disciplined log of daily problem solving — one question, every day, no skip and work
