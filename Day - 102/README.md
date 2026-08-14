@@ -1,4 +1,4 @@
-# Day 92 -- LeetCode Challenge
+# Day 102 -- LeetCode Challenge
 
 ## 3090. Maximum Length Substring With Two Occurrences
 
