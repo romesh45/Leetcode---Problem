@@ -1,4 +1,4 @@
-# Day 93 -- LeetCode Challenge
+# Day 101 -- LeetCode Challenge
 
 ## 2213. Longest Substring of One Repeating Character
 
