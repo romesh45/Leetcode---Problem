@@ -1,4 +1,4 @@
-# Day 94 -- LeetCode Challenge
+# Day 103 -- LeetCode Challenge
 
 ## 3702. Longest Subsequence With Non-Zero Bitwise XOR
 
